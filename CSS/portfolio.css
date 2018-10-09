@@ -125,13 +125,16 @@ a:hover {
 .alienmodtools {
     background: url("../IMG/project_alienmodtools.jpg");
 }
+.obscurity {
+    background: url('../IMG/project_obscurity.jpg'); 
+    border-bottom: 0 !important; /* last in list */
+}
 .eplanner {
     background: url('../IMG/project_eplanner.jpg'); 
     background-position: top !important;
-    border-bottom: 0 !important; /* last in list */
 }
-.obscurity {
-    background: url('../IMG/project_obscurity.jpg'); 
+.vans {
+    background: url('../IMG/project_vans.jpg');
 }
 
 @media (max-width: 768px) {
