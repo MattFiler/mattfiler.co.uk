@@ -1,0 +1,32 @@
+/*
+    Splash Page Styles
+    Created by Matt Filer (2018)
+*/
+
+body {
+    background-color: grey;
+    background: url("../IMG/splash_bg.jpg") no-repeat center;
+    background-size: cover;
+    margin: 0 15px;
+}
+h1 {
+    font-size:60px;
+}
+p {
+    font-size: 25px;
+    margin-top: -25px;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    p {
+        margin-top: -15px;
+    }
+}
