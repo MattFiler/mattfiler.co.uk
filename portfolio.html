@@ -1,5 +1,5 @@
 <head>
-    <title>Matt Filer</title>
+    <title>Matt Filer - Portfolio</title>
     
     <meta name="description" content="Matt Filer is a web developer from Weston super Mare.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,15 +15,81 @@
     <!-- Portfolio Content -->
     <center>
         <!-- Header -->
-        <div class="project_box intro project_header">
+        <div class="project_box intro project_header" style="background: transparent;">
             <div class="container intro project_header">
                 <h3>PORTFOLIO</h3>
                 <a href="http://twitter.com/MattFiler" target="_blank"><i class="fa fa-twitter-square"></i></a> 
                 <a href="https://www.linkedin.com/in/mattfiler/" target="_blank"><i class="fa fa-linkedin-square"></i></a> 
                 <a href="http://github.com/MattFiler" target="_blank"><i class="fa fa-github-square"></i></a> 
                 <a href="http://youtube.com/MatthewFiler" target="_blank"><i class="fa fa-youtube-square"></i></a>
-                <a href="mailto:hello@mattfiler.co.uk" target="_blank"><i class="fa fa-envelope-square"></i></a>
+                <a href="mailto:matthew.filer@hotmail.co.uk" target="_blank"><i class="fa fa-envelope-square"></i></a>
             </div>
+        </div>
+        <!-- Nav & Game Intro -->
+        <div class="container project_details">
+            <div class="breadcrumbs project_jump_buttons">
+                <p>
+                    <button class="invert jumpto_game">GAMES</button>
+                    <button class="invert jumpto_mod">MODS</button>
+                    <button class="invert jumpto_web">WEB</button>
+                    <button class="invert jumpto_video">VIDEOS</button>
+                </p>
+            </div>
+            <h2 class="project_divide_head game_jump" style="margin-top:90px;">GAME PROJECTS</h2>
+        </div>
+        <!-- Text Adventure Tool -->
+        <div class="project_box textadventuretool">
+            <div class="container">
+                <h3>TEXT ADVENTURE CREATION TOOLKIT</h3>
+                <p>I created a tool for developing text adventures through a modern designer-focused flowchart UI. This tool allowed for localisation across a number of languages, as well as the ability to very easily export your creation to a number of game engine implementations - including UE4, OpenGL and Unity.</p>
+                <a href="project_textadventuretool.html"><button>Read more...</button></a>
+            </div>
+        </div>
+        <!-- Level Design -->
+        <div class="project_box leveldesign">
+            <div class="container">
+                <h3>Accursed: Khulman's Tale</h3>
+                <p>While learning about level design, I created a fictional game titled "Accursed: Khulman's Tale" and developed documentation and a functioning demo for one of its levels. This was my first attempt at Unreal Engine 4 and allowed me to not only learn Blueprint through scripted sequences, but put into practice a number of level design concepts.</p>
+                <a href="project_leveldesign.html"><button>Read more...</button></a>
+            </div>
+        </div>
+        <!-- Haunted House -->
+        <!--
+        <div class="project_box hauntedhouse project_minor">
+            <div class="container project_minor">
+                <h3>HAUNTED HOUSE</h3>
+                <p>To appreciated the advantages to modern programming, I followed a tutorial from 1983 for creating a BASIC text adventure, and then re-created it in OpenGL using JSON and modern OOP functionality. </p>
+                <a href="project_hauntedhouse.html"><button>Read more...</button></a>
+            </div>
+        </div>
+        -->
+        <!-- Race to Space -->
+        <div class="project_box spacerace project_minor">
+            <div class="container project_minor">
+                <h3>RACE TO MARS</h3>
+                <p>As a way to learn and practice the process of balancing and testing game mechanics, I worked with a group to produce a board game named "Race to Mars". We iterated on the game's systems to eventually produce something that was engaging and fun to play.</p>
+                <a href="project_racetospace.html"><button>Read more...</button></a>
+            </div>
+        </div>
+        <!-- Angry Birds -->
+        <div class="project_box angrybirds project_minor">
+            <div class="container project_minor">
+                <h3>ANGRY BIRDS</h3>
+                <p>I created a non-physics Angry Birds game in OpenGL with the intention of learning about gamestates, level management and entities. The project also taught me about better class management!</p>
+                <a href="project_angrybirds.html"><button>Read more...</button></a>
+            </div>
+        </div>
+        <!-- PONG -->
+        <div class="project_box pong project_minor">
+            <div class="container project_minor">
+                <h3>ALIEN PONG</h3>
+                <p>For my first coding assignment at university I developed the game Pong in the style of the terminals from Alien: Isolation within OpenGL.</p>
+                <a href="project_pong.html"><button>Read more...</button></a>
+            </div>
+        </div>
+        <!-- Mods Intro -->
+        <div class="container project_details">
+            <h2 class="project_divide_head mod_jump">MODDING PROJECTS</h2>
         </div>
         <!-- Alien Isolation Zombies -->
         <div class="project_box alienzombies">
@@ -33,13 +99,25 @@
                 <a href="project_alienzombies.html"><button>Read more...</button></a>
             </div>
         </div>
-        <!-- OpenGL Games (ASGE) -->
-        <div class="project_box asge project_minor">
+        <!-- Alien Isolation Mod Tools -->
+        <div class="project_box alienmodtools project_minor">
             <div class="container project_minor">
-                <h3>OPENGL PROJECTS</h3>
-                <p>As part of my university course I developed a number of projects in OpenGL through UWE's own barebones OpenGL engine, codenamed ASGE. These projects are all available as compliable source code through GitHub, or pre-compiled through itch.io.</p>
-                <a href="project_asge.html"><button>Explore projects...</button></a>
+                <h3>A:I MODDING TOOLKIT</h3>
+                <p>I've developed a number of mods for Alien: Isolation, but perhaps my biggest achievement is the creation of the "Alien: Isolation Mod Tools" - a modding toolkit for the game allowing you to edit a vast range of game configurations including behaviour trees via a visual flowchart interface, realtime radiosity, and much more!</p>
+                <a href="https://github.com/MattFiler/LegendPlugin" target="_blank"><button>View on GitHub...</button></a>
             </div>
+        </div>
+        <!-- EOC -->
+        <div class="project_box eociv project_minor">
+            <div class="container project_minor">
+                <h3>EVOLUTION OF COMBAT</h3>
+                <p>One of the earliest modding projects I was involved with was Evolution of Combat IV for Jedi Academy. For the mod, I produced an auto-updating launcher and developed the in-game menu system. I was also the "community manager" producing regular development updates in the run-up to release, as well as preview videos and a trailer.</p>
+                <a href="http://eociv.mattfiler.co.uk/" target="_blank"><button>Visit website...</button></a>
+            </div>
+        </div>
+        <!-- Websites Intro -->
+        <div class="container project_details">
+            <h2 class="project_divide_head web_jump">WEB PROJECTS</h2>
         </div>
         <!-- ARTSTATION -->
         <div class="project_box artstation">
@@ -47,6 +125,22 @@
                 <h3>ARTSTATION HERITAGE LOTTERY DEMO</h3>
                 <p>The ARTSTATION demo was a WebGL interactive pointcloud "tech demo" created during a 10 week internship for a Heritage Lottery funded project. I acted as lead programmer and network engineer. It was my first client-driven project and taught me a lot about working to a brief and managing client expectations.</p>
                 <a href="project_artstation.html"><button>Read more...</button></a>
+            </div>
+        </div>
+        <!-- Homebase POS -->
+        <div class="project_box homebasepos project_minor">
+            <div class="container project_minor">
+                <h3>SIGNAGE GENERATOR</h3>
+                <p>While working at Homebase as a Sales Assistant, I identified an opportunity to streamline the company's process of generating in-store signage for product displays. To remove the need for PowerPoint templates and the risk of human error with labelling prices, I developed a web platform to automate the process.</p>
+                <a href="project_homebasepos.html"><button>Read more...</button></a>
+            </div>
+        </div>
+        <!-- ePlanner -->
+        <div class="project_box eplanner">
+            <div class="container">
+                <h3>PCSA EPLANNER</h3>
+                <p>The ePlanner was a resource I created for my old secondary school, being a fully functional version of the paper planners given to students on-site. The project was very data driven with multiple account levels including the leadership team, regular teaching staff, students and parents.</p>
+                <a href="project_eplanner.html"><button>Read more...</button></a>
             </div>
         </div>
         <!-- Hub City -->
@@ -57,13 +151,9 @@
                 <a href="http://archive.mattfiler.co.uk/HUB-CITY/" target="_blank"><button>Visit website...</button></a>
             </div>
         </div>
-        <!-- Isolation Mod Tools -->
-        <div class="project_box alienmodtools">
-            <div class="container">
-                <h3>ALIEN: ISOLATION MODDING TOOLKIT</h3>
-                <p>I've developed a number of mods for Alien: Isolation, but perhaps my biggest achievement is the creation of the "Alien: Isolation Mod Tools" - a modding toolkit for the game allowing you to edit a vast range of game configurations including behaviour trees via a visual flowchart interface, realtime radiosity, and much more!</p>
-                <a href="https://github.com/MattFiler/LegendPlugin" target="_blank"><button>View on GitHub...</button></a>
-            </div>
+        <!-- Videos Intro -->
+        <div class="container project_details">
+            <h2 class="project_divide_head video_jump">VIDEO PROJECTS</h2>
         </div>
         <!-- Manor Farm -->
         <div class="project_box manorfarm project_minor">
@@ -73,28 +163,12 @@
                 <a href="https://www.youtube.com/watch?v=zFBNIiIOcuY" target="_blank"><button>Watch video...</button></a>
             </div>
         </div>
-        <!-- Homebase POS -->
-        <div class="project_box homebasepos">
-            <div class="container">
-                <h3>HOMEBASE SIGNAGE GENERATOR</h3>
-                <p>While working at Homebase as a Sales Assistant, I identified an opportunity to streamline the company's process of generating in-store signage for product displays. To remove the need for PowerPoint templates and the risk of human error with labelling prices, I developed a web platform to automate the process.</p>
-                <a href="project_homebasepos.html"><button>Read more...</button></a>
-            </div>
-        </div>
         <!-- VANS Volunteering -->
-        <div class="project_box vans project_minor">
-            <div class="container project_minor">
-                <h3>VOLUNTARY ACTION</h3>
+        <div class="project_box vans">
+            <div class="container">
+                <h3>VOLUNTEER'S WEEK PROMOTION</h3>
                 <p>Voluntary Action North Somerset is a volunteering agency based in Weston super Mare which offers various services to volunteer groups in the local area. I worked with them for six months as part of my Duke of Edinburgh's award to create a video for National Volunteers' Week.</p>
                 <a href="https://vimeo.com/90165669" target="_blank"><button>Watch now...</button></a>
-            </div>
-        </div>
-        <!-- ePlanner -->
-        <div class="project_box eplanner">
-            <div class="container">
-                <h3>PCSA EPLANNER</h3>
-                <p>The ePlanner was a resource I created for my old secondary school, being a fully functional version of the paper planners given to students on-site. The project was very data driven with multiple account levels including the leadership team, regular teaching staff, students and parents.</p>
-                <a href="project_eplanner.html"><button>Read more...</button></a>
             </div>
         </div>
         <!-- Obscurity -->
@@ -107,6 +181,11 @@
         </div>
     </center>
     
+    <!-- Jump to Top -->
+    <div class="top_prompt">
+        <button class="invert jumpto_top"><i class="fa fa-arrow-up"></i></button>
+    </div>
+    
     <!-- Footer -->
     <center class="footer">
         <div class="container">
@@ -117,6 +196,31 @@
             <a href="mailto:hello@mattfiler.co.uk"><i class="fa fa-envelope-square"></i></a>
         </div>
     </center>
+    
+    <!-- Scripted Jump Buttons -->
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script>
+        $(".jumpto_game").click(function() {
+            $("html, body").animate({ scrollTop: ($(".game_jump").offset().top)-40 }, "slow");
+            $(".top_prompt").fadeIn();
+        });
+        $(".jumpto_mod").click(function() {
+            $("html, body").animate({ scrollTop: ($(".mod_jump").offset().top)-40 }, "slow");
+            $(".top_prompt").fadeIn();
+        });
+        $(".jumpto_web").click(function() {
+            $("html, body").animate({ scrollTop: ($(".web_jump").offset().top)-40 }, "slow");
+            $(".top_prompt").fadeIn();
+        });
+        $(".jumpto_video").click(function() {
+            $("html, body").animate({ scrollTop: ($(".video_jump").offset().top)-40 }, "slow");
+            $(".top_prompt").fadeIn();
+        });
+        $(".jumpto_top").click(function() {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            $(".top_prompt").fadeOut();
+        });
+    </script>
     
     <!-- Schema -->
     <script type="application/ld+json">

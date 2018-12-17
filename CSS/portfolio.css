@@ -81,6 +81,20 @@
 .project_details > .breadcrumbs > p > a:hover {
     color: black;
 }
+.project_divide_head {
+    font-size:50px; 
+    text-align:center; 
+    margin-bottom:-30px;
+    padding-top:10px;
+    border-top:5px dotted black;
+}
+.project_jump_buttons {
+    margin-top:-70px !important; 
+    border:0 !important;
+}
+.project_box > .container > h3 {
+    text-transform: uppercase;
+}
 
 hr {
     margin: 50px 0;
@@ -97,6 +111,14 @@ a:hover {
     text-decoration: none;
 }
 
+.top_prompt {
+    position:fixed;
+    bottom:0;
+    right:0; 
+    padding:20px;
+    display:none;
+}
+
 .intro {
     background: white;
     text-shadow: none;
@@ -107,8 +129,26 @@ a:hover {
 .alienzombies {
     background: url('../IMG/project_alienzombies.jpg');
 }
-.asge {
-    background: url('../IMG/project_asge.jpg');
+.pong {
+    background: url('../IMG/project_pong.jpg');
+}
+.angrybirds {
+    background: url('../IMG/project_angrybirds.jpg');
+}
+.hauntedhouse {
+    background: url('../IMG/project_hauntedhouse.jpg');
+}
+.leveldesign {
+    background: url('../IMG/project_leveldesign_alt.jpg');
+}
+.textadventuretool {
+    background: url('../IMG/project_textadventuretool.jpg');
+}
+.eociv {
+    background: url('../IMG/project_eoc.jpg');
+}
+.spacerace {
+    background: url('../IMG/project_racetospace.jpg');
 }
 .artstation {
     background: url('../IMG/project_artstation.jpg');

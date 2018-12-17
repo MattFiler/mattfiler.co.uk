@@ -41,7 +41,7 @@ button.invert {
     color: white !important;
 }
 button.invert:hover {
-    background: transparent !important;
+    background: white !important;
     color: black !important;
 }
 iframe {
