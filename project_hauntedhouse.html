@@ -29,15 +29,16 @@
                 </p>
             </div>
             <p>As a way to understand the advantages of modern OOP over older coding practices, I followed along with the 1983 book <a href="https://www.amazon.co.uk/Write-Your-Own-Adventure-Microcomputer/dp/0686878329"><i>Write Your Own Adventure: Programs for Your Microcomputer</i></a> and created its BASIC text adventure in an online Applesoft BASIC emulator.</p>
-            <img src="http://placehold.it/1003x172">
-            <p>placeholder</p>
-            <p>placeholder</p>
-            <img src="http://placehold.it/1003x172">
-            <p>The final project can be found in multiple forms below.</p>
+            <p>After creating the original BASIC adventure, I began re-creating it within C++ using our university's barebones OpenGL engine. I opted to read in item and map data from a JSON file for modularity, and did so through a library known as <a href="https://github.com/nlohmann/json"><i>JSON for Modern C++</i></a>. With this functionality, you can add/edit items and rooms without recompiling the game which was great for last minute fixes and small tweaks.</p>
+            <img src="IMG/project_hauntedhouse/book.jpg">
+            <p>My aim was to re-create the game as faithfully as possible in C++, however along the way I fixed a number of issues with the mechanics and made a few features easier to access - all of which was detailed in a changelog document.</p>
+            <p>The game plays and functions almost identical, and although obviously a larger codebase than the BASIC game, allows for easier modularity for future updates and improved code readability for bug fixes. As well as this, the ability to re-use code sections through functions without relying on BASIC's GOTO functionality is far more easily understandable, and with modern day IDEs, being able to jump to a function definition makes that even better.</p>
+            <img src="IMG/project_hauntedhouse/doorslams.jpg">
+            <p>The C++ project can be downloaded on itch.io below, and its source code along with the BASIC game and documentation can be found at the GitHub link, also below.</p>
             <center>
                 <br>
-                <p><a href="#" target="_blank"><button class="invert">DOWNLOAD ON ITCH.IO</button></a></p>
-                <p><a href="#" target="_blank"><button class="invert">VIEW SOURCE ON GITHUB</button></a></p>
+                <p><a href="https://mattfiler.itch.io/haunted-house" target="_blank"><button class="invert">DOWNLOAD ON ITCH.IO</button></a></p>
+                <p><a href="https://github.com/MattFiler/OpenGL_HauntedHouse" target="_blank"><button class="invert">VIEW SOURCE ON GITHUB</button></a></p>
             </center>
         </div>
     </center>

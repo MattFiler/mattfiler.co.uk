@@ -44,6 +44,16 @@ button.invert:hover {
     background: white !important;
     color: black !important;
 }
+button.disabled {
+    background: lightgrey !important;
+    border: 2px solid black !important;
+    color: black !important;
+    cursor: default !important;
+}
+button.disabled:hover {
+    background: lightgrey !important;
+    color: black !important;
+}
 iframe {
     width:100%;
     max-width: 560px; 
