@@ -181,6 +181,9 @@ a:hover {
 .vans {
     background: url('../IMG/project_vans.jpg');
 }
+.gloriouspropaganda {
+    background: url('../IMG/project_gloriouspropaganda.jpg');
+}
 
 @media (max-width: 768px) {
     .project_box h3 {
