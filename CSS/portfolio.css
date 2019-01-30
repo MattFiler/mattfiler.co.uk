@@ -184,6 +184,9 @@ a:hover {
 .gloriouspropaganda {
     background: url('../IMG/project_gloriouspropaganda.jpg');
 }
+.plannedobsolescence {
+    background: url('../IMG/project_plannedobsolescence.jpg');
+}
 
 @media (max-width: 768px) {
     .project_box h3 {
