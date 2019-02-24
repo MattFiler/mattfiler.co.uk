@@ -214,3 +214,10 @@ a:hover {
         margin-bottom: 10px;
     }
 }
+
+@media (max-width: 390px) {
+    .project_box h3 {
+        font-size: 27px;
+        word-break: break-word;
+    }
+}
