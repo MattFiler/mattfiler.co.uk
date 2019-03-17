@@ -31,7 +31,6 @@
 }
 .project_box h3 {
     font-size: 70px;
-    text-transform: capitalize;
     margin: 0;
 }
 
@@ -80,6 +79,13 @@
 .project_details > .breadcrumbs > p > a:hover {
     color: black;
 }
+.proj_title {
+    margin-bottom: 9px !important;
+    margin-top: -9px !important;
+}
+.proj_subtitle {
+    margin-top: 21px !important;
+}
 .proj_role_container {
     margin: 10px 0;
 }
@@ -107,9 +113,6 @@
 .project_jump_buttons {
     margin-top:-70px !important; 
     border:0 !important;
-}
-.project_box > .container > h3 {
-    text-transform: uppercase;
 }
 
 hr {
