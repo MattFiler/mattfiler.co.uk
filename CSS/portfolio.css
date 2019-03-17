@@ -207,6 +207,9 @@ a:hover {
 .plannedobsolescence {
     background: url('../IMG/project_plannedobsolescence.jpg');
 }
+.mariokart {
+    background: url('../IMG/project_mariokart_placeholder.jpg');
+}
 
 @media (max-width: 768px) {
     .project_box h3 {
