@@ -31,6 +31,7 @@ button {
     color: black;
     cursor: pointer;
     transition: all 0.5s ease;
+    border-radius: 3px;
 }
 button:hover {
     background: transparent;
