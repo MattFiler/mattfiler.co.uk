@@ -80,6 +80,23 @@
 .project_details > .breadcrumbs > p > a:hover {
     color: black;
 }
+.proj_role_container {
+    margin: 10px 0;
+}
+.proj_role {
+    background: white;
+    color: black;
+    display: table;
+    padding: 10px;
+    border-radius:3px;
+    font-size: 15px;
+    text-shadow: none;
+    font-weight:bold;
+    display: inline;
+}
+.proj_role_highlight {
+    background: lightgrey;
+}
 .project_divide_head {
     font-size:50px; 
     text-align:center; 
