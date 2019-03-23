@@ -236,6 +236,9 @@ a:hover {
     .project_divide_head {
         margin-bottom: 10px;
     }
+    .proj_role {
+        display: none;
+    }
 }
 
 @media (max-width: 390px) {
