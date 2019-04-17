@@ -2,7 +2,7 @@
     <title>Matt Filer - Portfolio</title>
     
     <meta charset="utf-8" />
-    <meta name="description" content="Game/web/tool programmer. Currently studying at UWE Bristol." />
+    <meta name="description" content="I'm Matt Filer, a game/web/tool programmer - currently studying at UWE Bristol." />
     <meta name="keywords" content="mattfiler, matt filer, game developer, programmer, tools, mods, modkit, alien, alien isolation mod tools">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
     
@@ -402,26 +402,22 @@
     <!-- Scripted Jump Buttons -->
     <script src="JS/jquery-3.3.1.min.js"></script>
     <script>
-        $(".jumpto_game").click(function() {
-            $("html, body").animate({ scrollTop: ($(".game_jump").offset().top)-40 }, "slow");
-            $(".top_prompt").fadeIn();
-        });
-        $(".jumpto_mod").click(function() {
-            $("html, body").animate({ scrollTop: ($(".mod_jump").offset().top)-40 }, "slow");
-            $(".top_prompt").fadeIn();
-        });
-        $(".jumpto_web").click(function() {
-            $("html, body").animate({ scrollTop: ($(".web_jump").offset().top)-40 }, "slow");
-            $(".top_prompt").fadeIn();
-        });
-        $(".jumpto_video").click(function() {
-            $("html, body").animate({ scrollTop: ($(".video_jump").offset().top)-40 }, "slow");
-            $(".top_prompt").fadeIn();
-        });
+        scrollTo("game");
+        scrollTo("mod");
+        scrollTo("web");
+        scrollTo("video");
+        
         $(".jumpto_top").click(function() {
             $("html, body").animate({ scrollTop: 0 }, "slow");
             $(".top_prompt").fadeOut();
         });
+        
+        function scrollTo(section_name) {
+            $(".jumpto_" + section_name).click(function() {
+                $("html, body").animate({ scrollTop: ($("." + section_name + "_jump").offset().top)-40 }, "slow");
+                $(".top_prompt").fadeIn();
+            });
+        }
     </script>
     
     <!-- ScrollReveal -->
