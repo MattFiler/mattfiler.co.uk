@@ -215,6 +215,9 @@ a:hover {
 .mariokart {
     background: url('../IMG/project_mariokart_placeholder2.jpg');
 }
+.ipatch {
+    background: url('../IMG/project_ipatch.jpg');
+}
 
 @media (max-width: 768px) {
     .project_box h3 {
