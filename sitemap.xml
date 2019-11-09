@@ -2,57 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
 	  <loc>http://mattfiler.co.uk/</loc>
-	  <lastmod>2018-12-17T16:58:07+00:00</lastmod>
+	  <lastmod>2019-11-09T12:00:00+00:00</lastmod>
 	  <priority>1.00</priority>
 	</url>
 	<url>
-	  <loc>http://mattfiler.co.uk/portfolio.html</loc>
-	  <lastmod>2018-12-17T16:58:06+00:00</lastmod>
-	  <priority>0.80</priority>
-	</url>
-	<url>
-	  <loc>http://mattfiler.co.uk/project_textadventuretool.html</loc>
-	  <lastmod>2018-12-17T16:58:07+00:00</lastmod>
-	  <priority>0.64</priority>
-	</url>
-	<url>
-	  <loc>http://mattfiler.co.uk/project_leveldesign.html</loc>
-	  <lastmod>2018-12-17T16:58:06+00:00</lastmod>
-	  <priority>0.64</priority>
-	</url>
-	<url>
-	  <loc>http://mattfiler.co.uk/project_racetospace.html</loc>
-	  <lastmod>2018-12-17T16:58:07+00:00</lastmod>
-	  <priority>0.64</priority>
-	</url>
-	<url>
-	  <loc>http://mattfiler.co.uk/project_angrybirds.html</loc>
-	  <lastmod>2018-12-17T16:58:06+00:00</lastmod>
-	  <priority>0.64</priority>
-	</url>
-	<url>
-	  <loc>http://mattfiler.co.uk/project_pong.html</loc>
-	  <lastmod>2018-12-17T16:58:06+00:00</lastmod>
-	  <priority>0.64</priority>
-	</url>
-	<url>
 	  <loc>http://mattfiler.co.uk/project_alienzombies.html</loc>
-	  <lastmod>2018-12-17T16:58:06+00:00</lastmod>
-	  <priority>0.64</priority>
-	</url>
-	<url>
-	  <loc>http://mattfiler.co.uk/project_artstation.html</loc>
-	  <lastmod>2018-12-17T16:58:06+00:00</lastmod>
-	  <priority>0.64</priority>
-	</url>
-	<url>
-	  <loc>http://mattfiler.co.uk/project_homebasepos.html</loc>
-	  <lastmod>2018-12-17T16:58:06+00:00</lastmod>
-	  <priority>0.64</priority>
-	</url>
-	<url>
-	  <loc>http://mattfiler.co.uk/project_eplanner.html</loc>
-	  <lastmod>2018-12-17T16:58:06+00:00</lastmod>
-	  <priority>0.64</priority>
+	  <lastmod>2019-11-09T12:00:00+00:00</lastmod>
+	  <priority>0.8</priority>
 	</url>
 </urlset>

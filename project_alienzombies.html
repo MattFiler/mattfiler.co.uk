@@ -7,36 +7,49 @@
     
     <link rel="stylesheet" href="CSS/FONTS/GoogleSans/stylesheet.css" />
     <link rel="stylesheet" href="CSS/FONTS/FontAwesome/stylesheet.css" />
-    <link rel="stylesheet" href="CSS/common.css" />
-    <link rel="stylesheet" href="CSS/portfolio.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    
+    <style>
+        body {
+            color: black;
+        }
+        img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
     
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 <body>
-    <!-- Portfolio Content -->
-    <center>
-        <!-- Alien Isolation Zombies -->
-        <div class="project_box alienzombies project_header">
-            <div class="container project_header">
-                <h3>Alien Isolation Zombies</h3>
+    <div class="jumbotron alienzombies">
+        <div class="container">
+            <div class="col-md-12">
+                <h1 style="text-align:center;color: white;">Alien: Isolation Zombies</h1>
             </div>
         </div>
-        <div class="container project_details">
-            <div class="breadcrumbs">
-                <p>
-                    <a href="portfolio.html">PORTFOLIO</a> 
-                    -> 
-                    <a href="project_alienzombies.html">ALIEN ISOLATION ZOMBIES</a>
-                </p>
-            </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="col-md-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/#mods_section">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Alien Isolation Zombies</li>
+                </ol>
+            </nav>
+            
             <p>Alien Isolation Zombies is a custom map for Black Ops 3 which I created in my spare time on and off between September 2016 and September 2018. The aim of the project was to teach myself all about material types, assembling a fun and engaging level, gameplay scripting, and lighting. As the project grew it ended up teaching me even more than that however, as publicity and interacting with the community became quite a big part of the map's success. I created a number of trailers for the map and publicised them around forums on the internet.</p>
             <p>The map has five main areas unlocked through the course of playing a linear narrative, helped along by cutscenes and voiceover work taken from the original game and repurposed. I edited cutscenes and audio to fit the story of the Zombies experience which added greatly to the atmosphere of the map and helped greatly to convey the story I was going for. I wanted to keep the narrative close to that of the original game, but with Zombies instead of a Xenomorph.</p>
             <p>You're part of a team sent to Sevastopol Station aboard The Torrens following Weylan-Yutani recieving a distress signal from Colonial Marshal Waits. The message asks for immediate help to deal with the reanimation of the station's residents, however your primary objective from the Company is to investigate the status of the station and relay your findings to the Seegson response team. All other considerations secondary... crew expendable.</p>
             <p>Check out the trailer for full release of the map below, and read on to find out more about the process of creating it and the thought that went into turning levels from Alien: Isolation into a fun zombies experience. I've also linked a few development testing videos and screenshots throughout.</p>
             <center>
-                <div class='embed-container'><iframe src='https://www.youtube.com/embed/JEn5iFbxJLg' frameborder='0' allowfullscreen></iframe></div>
-                <p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=817550789" target="_blank"><button class="invert">Download on Steam Workshop</button></a>
-                <a href="https://www.artstation.com/artwork/XAm2l" target="_blank"><button class="invert">View screenshots on ArtStation</button></a></p>
+                <p><div class='embed-container'><iframe src='https://www.youtube.com/embed/JEn5iFbxJLg' frameborder='0' allowfullscreen></iframe></div></p>
+                <p>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=817550789" class="btn btn-lg new_btn btn_black" target="_blank">Download on Steam Workshop</a>
+                    <a href="https://www.artstation.com/artwork/XAm2l" class="btn btn-lg new_btn btn_black" target="_blank">View screenshots on ArtStation</a>
+                </p>    
             </center>
             
             <hr>
@@ -89,18 +102,23 @@
             <p>Other than removing the vent and choosing not to include and/or block off sections such as the elevator lobby and staircase, this section of the map is pretty close to the original game, just minus a lot of the debris to keep areas open and clear. In terms of weapons/equipment, the monkeys are clearly placed as soon as you enter the area and they are super useful for activating the terminals, especially on your own. High power weapons like the raygun are available, and max ammo is dished out multiple times in the sequence, as well as all perks for free.</p>
             <p>Despite all of this, you still absolutely get the sense that this section is working against you which gives players a buzz when they finally escape in the airlock. I'm yet to see a streamer or YouTuber unimpressed to have beaten this ending sequence, and at the end of the day, that makes it all worthwhile.</p>
         </div>
-    </center>
+    </div>
     
     <!-- Footer -->
-    <center class="footer">
-        <div class="container">
-            <a href="http://twitter.com/MattFiler"><i class="fa fa-twitter-square"></i></a> 
-            <a href="https://www.linkedin.com/in/mattfiler/"><i class="fa fa-linkedin-square"></i></a> 
-            <a href="http://github.com/MattFiler"><i class="fa fa-github-square"></i></a> 
-            <a href="http://youtube.com/MatthewFiler"><i class="fa fa-youtube-square"></i></a>
-            <a href="mailto:matthew.filer@hotmail.co.uk" target="_blank"><i class="fa fa-envelope-square"></i></a>
+    <div class="container">
+        <div class="col-md-12 text-right">
+            <br>
+            <h3>
+                <a href="http://twitter.com/MattFiler"><i class="fab fa-twitter-square footer_links"></i></a> 
+                <a href="https://www.linkedin.com/in/mattfiler/"><i class="fab fa-linkedin footer_links"></i></a> 
+                <a href="http://github.com/MattFiler"><i class="fab fa-github-square footer_links"></i></a> 
+                <a href="https://mattfiler.itch.io/"><i class="fab fa-itch-io footer_links"></i></a>
+                <a href="http://youtube.com/MatthewFiler"><i class="fab fa-youtube-square footer_links"></i></a>
+                <a href="mailto:matthew.filer@hotmail.co.uk" target="_blank"><i class="fa fa-envelope-square footer_links"></i></a>
+            </h3>
+            <br><br><br><br>
         </div>
-    </center>
+    </div>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39768980-6"></script>

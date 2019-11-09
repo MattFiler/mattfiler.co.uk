@@ -7,20 +7,981 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
     
     <link rel="stylesheet" href="CSS/FONTS/GoogleSans/stylesheet.css" />
-    <link rel="stylesheet" href="CSS/common.css" />
+    <link rel="stylesheet" href="CSS/FONTS/FontAwesome/stylesheet.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
     <link rel="stylesheet" href="CSS/index.css" />
+    
+    <noscript>
+        <style>
+            .top_container {
+                background: url("IMG/splash_bg.jpg") no-repeat center;
+            }
+        </style>
+    </noscript>
     
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 <body>
-    <!-- Splash Content -->
-    <center>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-bottom navbar-dark bg-dark">
+        <a class="navbar-brand top_jump supersmall_hide" href="#">Matt Filer</a>
+        <ul class="nav ml-auto">
+            <li class="nav-item">
+                <a href="#games_section" class="nav-link games_jump">Games</a>
+            </li>
+            <li class="nav-item">
+                <a href="#mods_section" class="nav-link mods_jump">Mods</a>
+            </li>
+            <li class="nav-item">
+                <a href="#websites_section" class="nav-link websites_jump">Web</a>
+            </li>
+            <li class="nav-item">
+                <a href="#videos_section" class="nav-link videos_jump">Videos</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Top Section -->
+    <section class="top_container" data-parallax="scroll" data-image-src="IMG/splash_bg.jpg">
+        <!-- Intro Header -->
         <div class="container">
-            <h1>Hey, I'm Matt!</h1>
-            <p>I'm currently studying game development and programming at UWE Bristol, while working at PlayWest.</p>
-            <a href="portfolio.html"><button>Check out some of my work!</button></a>
+            <div class="row h-50">
+                <div class="col-sm-12 my-auto">
+                    <h1 style="font-weight: bolder;" class="main_intro">Hey, I'm Matt!</h1>
+                    <h2 style="font-weight: normal;" class="main_subintro">I'm a developer currently working on some cool stuff at PlayWest.</h2>
+                    <br>
+                    <h4 style="font-weight: bolder;" class="supersmall_hide">I have a strong background in programming for games, the web, and Windows apps. I'm familiar with Unity and UE4, and have also worked with DirectX closely in a number of projects.</h4>
+                    <h4 style="font-weight: bolder;" class="desktop_only">I'm currently in year three at UWE Bristol studying game development and programming. My dissertation is focussing on the production of skyboxes through machine learning.</h4>
+                    <br class="supersmall_hide">
+                    <h5 style="font-weight: normal;" class="desktop_only">If you'd like to chat, you can reach me through any of the channels linked below. Read on to see some previous projects!</h5>
+                    <br class="supersmall_hide">
+                    <p>
+                        <a href="http://twitter.com/MattFiler" class="btn btn-lg new_btn btn_white mx-1" data-toggle="tooltip" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/mattfiler" class="btn btn-lg new_btn btn_white mx-1" data-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="http://github.com/MattFiler" class="btn btn-lg new_btn btn_white mx-1" data-toggle="tooltip" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://mattfiler.itch.io/" class="btn btn-lg new_btn btn_white mx-1 supersmall_hide" data-toggle="tooltip" title="Itch.io"><i class="fab fa-itch-io"></i></a>
+                        <a href="http://youtube.com/MattFiler" class="btn btn-lg new_btn btn_white mx-1" data-toggle="tooltip" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="mailto:matthew.filer@hotmail.co.uk" class="btn btn-lg new_btn btn_white mx-1" data-toggle="tooltip" title="Email"><i class="fa fa-envelope"></i></a>
+                    </p>
+                </div>
+            </div>
         </div>
-    </center>
+
+        <!-- Divider -->
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="divider">
+            <path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+        </svg>
+    </section>
+    
+    <!-- Games Section -->
+    <section id="games_section">
+        <h1 class="section_title">Games</h1>
+
+        <!-- i-Patch Pirates -->
+        <div class="jumbotron ipatch">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <img src="IMG/unity.svg" height="40px" class="rounded float-right">
+                                        <h1>i-Patch Pirates</h1>
+                                        <h5>
+                                            <span class="badge badge-info">PlayWest</span>
+                                            <span class="badge badge-secondary">Android, WebGL</span>
+                                            <span class="badge badge-dark">Systems Programmer</span>
+                                            <span class="badge badge-dark">Polish</span>
+                                            <span class="badge badge-dark">Tools</span>
+                                        </h5>
+                                        <p>A large project encompassing minigames about cybersecurity for Android, web, and arcade.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#pirates_panel">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container youtube-player' data-id='Tx_bLJy2fsk'></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="pirates_panel">
+                            <div class="pt-3">
+                                <div class="mobile_only"><p><div class='embed-container youtube-player' data-id='Tx_bLJy2fsk'></div></p></div>
+                                <p>i-Patch Pirates was my first shipped title at PlayWest, a games studio operated by UWE Bristol. The game was funded by UWE IT Services and aimed to promote cyber security to students and staff across both UWE campuses. I joined the project around two months from the ship date and helped push it through multiple major milestones and presentations.</p>
+                                <p>The 2019 game is a continuation of the 2018 project under the same name, however we added two new gamemodes, reworked major core gameplay mechanics, and introduced a number of new systems. We also targetted the game for a new platform, Android, which required reworking some older code.</p>
+                                <p>My responsibilities for the project were to implement several key new systems such as achievements, tutorials, and an arcade login. I also worked across the project fixing miscellaneous bugs as they arose, tidying older systems for modular use, and updating the UI to use animators. As well as this I created the promotional trailer and splash for our WebGL build.</p>
+                                <p>I was also in charge of creating a locker hacking minigame which had players guess part of a player's login code in order to break into that player's locker and steal their gold or buried treasure location. If a buried treasure location was found, it would be marked on the world map and players could explore to find it. Upon finding the treasure location the player had a chance to dig it up by playing a gem matching minigame. The aim of the locker hacking was to encourage players to pick stronger passwords and change them regularly.</p>
+                                <a href="https://play.google.com/store/apps/details?id=com.playwest.ipatchpirates&hl=en_US" target="_blank" class="btn btn-lg new_btn btn_black">Download for Android</a>
+                                <a href="https://playwe.st/ipatch/" target="_blank" class="btn btn-lg new_btn btn_black" >Play Online</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Founders -->
+        <div class="jumbotron founders">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <img src="IMG/unity.svg" height="40px" class="rounded float-right">
+                                        <h1>The Founders</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Team of 5</span>
+                                            <span class="badge badge-secondary">Android, WebGL, Windows</span>
+                                            <span class="badge badge-dark">Systems Programmer</span>
+                                            <span class="badge badge-dark">Concept</span>
+                                        </h5>
+                                        <p>A local multiplayer game designed for touchscreen.</p>
+                                        <button class="btn btn-lg btn-warning" style="cursor:pointer;">Coming soon...</button>
+                                        <!--<a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#founders_panel">Read more...</a>-->
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container'><img src="IMG/foundryplaceholder.jpg" style="width:100%;"><!--<iframe src='about:blank' data-src='x'>--></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="founders_panel">
+                            <div class="pt-3">
+                                <!--<div class="mobile_only"><p><div class='embed-container youtube-player' data-id='x'></div></p></div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mario Kart DX12 -->
+        <div class="jumbotron mariokart">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <img src="IMG/directx.svg" height="40px" class="rounded float-right">
+                                        <h1>Mario Kart</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Team of 4</span>
+                                            <span class="badge badge-secondary">Windows</span>
+                                            <span class="badge badge-secondary">DirectX 12</span>
+                                            <span class="badge badge-dark">Tool Programmer</span>
+                                            <span class="badge badge-dark">Asset Pipeline</span>
+                                            <span class="badge badge-dark">Data Parsing</span>
+                                        </h5>
+                                        <p>A recreation of Mario Kart within DirectX12 with a fully custom engine pipeline.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#panel_mariokart">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container'><img src="IMG/mariokart_placeholder.jpg" style="width:100%;"><!--<iframe src='about:blank' data-src='x'>--></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="panel_mariokart">
+                                <div class="pt-3">
+                                    <!--<div class="mobile_only"><p><div class='embed-container youtube-player' data-id='x'></div></p></div>-->
+                                    <p>This project was to create an engine framework capable of running a Mario Kart style game, utilising DirectX12. The final engine and Mario Kart based game came together quite nicely over a few months of work.</p>
+                                    <p>The main focus of this project was building the engine, so a significant focus was placed on producing reuseable systems rather than bespoke functionality for the Mario Kart project. We created a number of systems for physics, audio, asset management, and more - all of which are non-specific to the Mario Kart game and could allow the engine to be easily repurposed for another title.</p>
+                                    <p>The core of the engine backend relies on a toolkit which allows access to most of the engine's core features through a GUI with a range of functionalities for asset importing (models/sounds/images/etc), configuration customisation (fonts/keybinds/cameras/glyphs), and a series of other things. We also embedded some more bespoke features into the engine toolkit, for example, item configurations.</p>
+                                    <p>Our asset pipeline was developed around a system I referred to as "asset comps": the idea of importing a series of assets which build up a compilation for a specific use. This "use" was then read-in by the engine itself to provide the assets for a certain entity. For example, a character would have a comp which specified its model, sounds, name, and more. When an asset is assigned to a comp it is tagged - asset tagging became useful to prevent the deletion of in-use assets, and also would be useful for releasing a project and making sure it does not ship with any development (or upcoming) assets.</p>
+                                    <p>Levels are created for the engine through Blender, which utilises our own plugin that I developed for placing points in the world representing collision volumes (for lap checkpoints), item boxes, and more. This is a nice graphical way of adding entities within the map without using magic numbers. A level in the engine is built up by one or two models, one model supporting mesh collision, and the other being effectively background scenery. This was implemented later in development as we reached memory caps with larger levels as just one SDKMESH.</p>
+                                    <p>The engine utilises the new SDKMESH2 format for PBR materials. All imported models have a bounding box automatically calculated, unless importing as a map, in which case mesh collision data is produced. Mesh collision data is stored in a proprietary file format which is a binary representation of each triangle in the model, which the engine's mesh collision system traverses to calculate collision responses. Another simple propriatary format is utilised for animated materials: these binary files work by storing a number of frames, and the timing intervals between them. The model renderer then applies this information at runtime when rendering each material.</p>
+                                    <p>To read a bit more about the engine, check out the repo below, or download the final game and give it a try!</p>
+                                    <a href="https://mattfiler.itch.io/mario-kart-dx12" target="_blank" class="btn btn-lg new_btn btn_black">Download</a>
+                                    <a href="https://github.com/MattFiler/ThICC_Engine/" target="_blank" class="btn btn-lg new_btn btn_black" >View Source on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Planned Obsolescence -->
+        <div class="jumbotron plannedobsolescence">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <img src="IMG/opengl.svg" height="40px" class="rounded float-right">
+                                        <h1>Planned Obsolescence</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Team of 3</span>
+                                            <span class="badge badge-secondary">Windows</span>
+                                            <span class="badge badge-secondary">OpenGL</span>
+                                            <span class="badge badge-dark">Systems Programmer</span>
+                                            <span class="badge badge-dark">Tool Programmer</span>
+                                            <span class="badge badge-dark">Design</span>
+                                        </h5>
+                                        <p>A game where you play as an AI in control of a lab that's working to replace you.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#panel_plannedobsolescence">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container youtube-player' data-id='8hSsSz_Ctsg'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="panel_plannedobsolescence">
+                                <div class="pt-3">
+                                    <div class="mobile_only"><p><div class='embed-container youtube-player' data-id='8hSsSz_Ctsg'></div></p></div>
+                                    <p>Planned Obsolescence was a game created in a group of three with a tangential link to the film Ex Machina. You play as an AI named TIM - the Totally Intelligent Machine - who is in control of a research lab currently working on a project to develop a new AI that supersedes TIM. The aim of the game is to delay the project to replace you so that it is eventually cancelled and you can remain in control.</p>
+                                    <p>The game features a full AI system and dynamic gameplay through a randomly selected map from the available map pool, there are also mappable keybinds and varying resolutions, as well as support for three languages.</p>
+                                    <p>As well as developing the game itself, I created a toolkit alongside the project which allowed us to produce maps and customise game elements through a friendly UI. The toolkit handled compiling game maps to improve performance of the game at runtime, as well as a few other handy features. As a result of the toolkit's map builder we saw a massive boost in performance, rendering just one map sprite instead of hundreds of individually placed tiles.</p>
+                                    <p>I also produced the logo for the game and created the UI, which I'm quite pleased with - it's a nice simple style which reflects the tone of the game well.</p>
+                                    <p>While the tool worked with XML, all data required by the game was compiled to JSON files at the map compile time, allowing for the <a href="https://github.com/nlohmann/json">nlohmann JSON library</a> to be used within the game for parsing config files.</p>
+                                    <p>We completed the project in a couple of months and the final result came together quite nicely. It was shown to other students and staff in our class through an "expo" day, where it received positive feedback. I took some of the critiques that players had (such as highlighting tiles when clicked, and the need of a better tutorial) and implemented them into the game after the "expo" day.</p>
+                                    <p>The game can be downloaded below, with the editing tools available in the GitHub repo. Make some maps!</p>
+                                    <a href="https://mattfiler.itch.io/planned-obsolescence" class="btn btn-lg new_btn btn_black" target="_blank">Download</a>
+                                    <a href="https://github.com/MattFiler/Planned-Obsolescence" class="btn btn-lg new_btn btn_black" target="_blank">View Source on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text Adventure Tool -->
+        <div class="jumbotron textadventuretool">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <!--<img src="IMG/opengl.svg" width="100px" class="rounded float-right">-->
+                                        <h1>Text Adventure Toolkit</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Solo Project</span>
+                                            <span class="badge badge-secondary">Windows</span>
+                                            <span class="badge badge-secondary">OpenGL/UE4/Unity</span>
+                                            <span class="badge badge-dark">Tool Programmer</span>
+                                            <span class="badge badge-dark">Research</span>
+                                        </h5>
+                                        <p>A designer focussed toolkit for producing text adventures with no programming.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#panel_tatool">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container youtube-player' data-id='74wNFoNedzs'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="panel_tatool">
+                                <div class="pt-3">
+                                    <div class="mobile_only"><p><div class='embed-container youtube-player' data-id='74wNFoNedzs'></div></p></div>
+                                    <p>As part of my engine architecture module at university I was tasked with implementing a text adventure in multiple engines. To take this one step further, I also produced a tool alongside these implementations which would allow you to produce the text adventure "script" in a designer-focussed flowchart editor, localise it into a number of languages, and then output your creation to one of three engine implementations: Unity, Unreal and OpenGL.</p>
+                                    <p>The tool had a focus on being designer friendly and simple to use, and to highlight that I produced documentation alongside it which explained how to utilise the flowchart interface and also how to use the tools reliably.</p>
+                                    <a href="https://github.com/MattFiler/TextAdventureToolkit/releases" class="btn btn-lg new_btn btn_black" target="_blank">Download</a>
+                                    <a href="https://github.com/MattFiler/TextAdventureToolkit/" class="btn btn-lg new_btn btn_black" target="_blank">View Source on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Superhot Demake -->
+        <div class="jumbotron superhot">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <img src="IMG/unity.svg" height="40px" class="rounded float-right">
+                                        <h1>Atari 2600 Superhot</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Team of 4</span>
+                                            <span class="badge badge-secondary">Windows</span>
+                                            <span class="badge badge-dark">Design</span>
+                                            <span class="badge badge-dark">Systems Programmer</span>
+                                        </h5>
+                                        <p>A demake of Superhot in the style of an Atari 2600 game.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#superhot_panel">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container youtube-player' data-id='MtLMUgA1SW8'></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="superhot_panel">
+                            <div class="pt-3">
+                                <div class="mobile_only"><p><div class='embed-container youtube-player' data-id='MtLMUgA1SW8'></div></p></div>
+                                <p>Created in a team of four over a few days, this game is a "demake" of Superhot, styled for the Atari 2600. We attempted to recreate the feel of an old console by utilising the correct resolution, colour scheme, sounds, and art.</p>
+                                <p>Our aim with the game was not only to produce it quickly through fast iteration, but to have something that was fun to play and easy to pick up.</p>
+                                <p>The game was intended to use some USB NES controllers we had, however all inputs remap to keyboard - with spacebar and W/A/S/D.</p>
+                                <a href="https://mattfiler.itch.io/atari-2600-superhot" class="btn btn-lg new_btn btn_black" target="_blank">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accursed: Khulman's Tale -->
+        <div class="jumbotron leveldesign">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <img src="IMG/ue4.svg" height="40px" class="rounded float-right">
+                                        <h1>Accursed: Khulman's Tale</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Solo Project</span>
+                                            <span class="badge badge-secondary">Windows</span>
+                                            <span class="badge badge-secondary">UE4</span>
+                                            <span class="badge badge-dark">Level Design</span>
+                                            <span class="badge badge-dark">Documentation</span>
+                                        </h5>
+                                        <p>A level for a concept game set in Scotland with a Lovecraftian theme.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#panel_leveldesign">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container youtube-player' data-id='vuEZivp0cqE'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="panel_leveldesign">
+                                <div class="pt-3">
+                                    <div class="mobile_only"><p><div class='embed-container youtube-player' data-id='vuEZivp0cqE'></div></p></div>
+                                    <p>Accursed: Khulman's Tale was a project I developed over a couple of weeks given a brief of style, setting and technical requirements. The project had to have a Lovecraftian feel and hit four stages: arrival (in the village), entrance (in a building), descent (into caves), madness (the other place). Any other design, layout, story, and additional style choice was left to my decision.</p>
+                                    <p>The levels I created satisfied the brief and allowed the player a range of freedom without being too restrictive. Objectives were clearly pointed and the design was clearly focused towards where the player should head. Level design tricks were used such as valves within the caves (the rockfall) requiring you to continue forwards, and a landmark structure in the form of a radio tower which allows the player to orientate themselves within the island.</p>
+                                    <p>Along with the levels and demo I produced a design document which detailed my process of creating the levels from initial concept to design inspiration to finished product. A number of sources were referenced for the design of the island and the "unknown" (other place) including real life locations in Scotland and Somerset, as well as fictional places such as Xen from the fan-made Half-Life title Black Mesa.</p>
+                                    <p>The finished demo came out quite nicely in my opinion, with a good set of the required technical features and interactions also specified in the brief (effects, scripted sequences, object pull/push, and more) and an interesting narrative that suits a Lovecraft setting.</p>
+                                    <p>The final project can be downloaded from Itch below along with my design documentation!</p>
+                                    <a href="https://mattfiler.itch.io/accursed-khulmans-tale" class="btn btn-lg new_btn btn_black" target="_blank">Download</a>
+                                    <a href="https://drive.google.com/file/d/1YTkylUPHBqeuW94gwwgxuY2oZOKn-VE4/view?usp=sharing" class="btn btn-lg new_btn btn_black" target="_blank">View Design Document</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Race to Mars -->
+        <div class="jumbotron spacerace">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <img src="IMG/opengl.svg" height="40px" class="rounded float-right">
+                                        <h1>Race to Mars</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Team of 5 &amp; 2</span>
+                                            <span class="badge badge-secondary">Windows</span>
+                                            <span class="badge badge-secondary">OpenGL</span>
+                                            <span class="badge badge-dark">Design</span>
+                                            <span class="badge badge-dark">Lead Programmer</span>
+                                            <span class="badge badge-dark">Networking</span>
+                                        </h5>
+                                        <p>A four player networked co-op game with the aim of reaching Mars.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#panel_racetospace">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container youtube-player' data-id='nDK12LByuYY'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="panel_racetospace">
+                                <div class="pt-3">
+                                    <div class="mobile_only"><p><div class='embed-container youtube-player' data-id='nDK12LByuYY'></div></p></div>
+                                    <p>As a lesson in designing and balancing game mechanics I developed a board game with a group. We worked as a team of five to decide on a theme for the game based on current news events, landing on the current SpaceX/Nasa Mars projects. From there we brainstormed a number of game ideas, eventually landing on the idea of a co-op game that had a win condition of getting to Mars successfully.</p>
+                                    <p>After creating the board game, two of our team moved on to create a four player networked version of the game for PC using the framework 'ASGE' for OpenGL. The game featured the core feature set from the board game as well as the networking mechanics you would expect, such as disconnect/reconnect, chat, and lobbies.</p>
+                                    <p>To see more about the networked game, check out the links at the bottom of this page, or read on to learn about the process of creating the board game which later became the PC game.</p>
+                                    <hr>
+                                    <p>Initially we planned  on having a system where players were assigned a number of movement points each turn and they would use those to move around a ship on the board. When moving to a space, they could fix any issues that were outstanding out of a number of issues that were pulled each turn. We quickly realised this complex movement was over complicated and didn't work for the game, so we decided to keep movement, but simplified. Less spaces were on the board to move between and movement points were taken from your dice roll which also add up to give you points to spend to fix issues.</p>
+                                    <p>Each turn, a counter representing the spaceship you're moving within is moved on the board and when it reaches Mars, you've won. To do that, you must keep your issues on-board below 5, completing all of them before being able to land on Mars itself. Added throughout the spaces are icons that prompt to you draw an objective card. Objective cards are a mechanic I introduced during our early play tests as there simply wasn't enough to do each turn. The objectives added a mechanic to work against your team in order to recieve personal points that would put you as the overall winner at the end of the game if you had the most.</p>
+                                    <p>The objective cards worked well to add another depth to the game outside of its core loop, however during testing we removed the personal points you gained and introduced team rewards that benefit everyone. Keeping track of personal points gained by working against your team didn't suit our USP of a co-op board game designed with team building in mind. Although you still sometimes work against eachother to complete objectives, it is always for the team's benefit.</p>
+                                    <p>As part of the project I developed an online card creator for the team to use that allowed anyone to produce effectively "production-ready" cards for the game. This was very valuable as it sped up our workflow massively and allowed us to playtest with final card designs and iterate on the card's contents without re-editing Photoshop documents!</p>
+                                    <p>Linked below is the presentation used to show our playtesting changes and final game concept, as well as a link to the card generator. Also below is our group's rule demonstration video.</p>
+                                    <a href="https://mattfiler.itch.io/race-to-mars/" class="btn btn-lg new_btn btn_black" target="_blank">Download</a>
+                                    <a href="https://github.com/MattFiler/Race-to-Mars" class="btn btn-lg new_btn btn_black" target="_blank">View Source on GitHub</a>
+                                    <a href="https://docs.google.com/presentation/d/1XXnjJPP-2UwGqQFTiP8B8aUG_zlbrXhnVwOZzzSkA1w/edit?usp=sharing" class="btn btn-lg new_btn btn_black" target="_blank">View Presentation</a>
+                                    <a href="http://playandgames.mattfiler.co.uk/" class="btn btn-lg new_btn btn_black" target="_blank">Visit Card Generator</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mods Section -->
+    <section id="mods_section">
+        <h1 class="section_title">Mods</h1>
+
+        <!-- Alien Isolation Zombies -->
+        <div class="jumbotron alienzombies">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <h1>Alien Isolation Zombies</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Solo Project</span>
+                                            <span class="badge badge-secondary">Black Ops 3</span>
+                                            <span class="badge badge-secondary">IW Engine</span>
+                                            <span class="badge badge-dark">Level Design</span>
+                                            <span class="badge badge-dark">Gameplay Scripting</span>
+                                            <span class="badge badge-dark">Publicity</span>
+                                        </h5>
+                                        <p>A zombies map for Black Ops 3 faithfully set within the world of Alien: Isolation.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#zombies_panel">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container youtube-player' data-id='JEn5iFbxJLg'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="zombies_panel">
+                                <div class="pt-3">
+                                    <div class="mobile_only"><p><div class='embed-container youtube-player' data-id='JEn5iFbxJLg'></div></p></div>
+                                    <p>Alien Isolation Zombies is a custom map for Black Ops 3 which I created in my spare time on and off between September 2016 and September 2018. The aim of the project was to teach myself all about material types, assembling a fun and engaging level, gameplay scripting, and lighting. As the project grew it ended up teaching me even more than that however, as publicity and interacting with the community became quite a big part of the map's success. I created a number of trailers for the map and publicised them around forums on the internet.</p>
+                                    <p>The map has five main areas unlocked through the course of playing a linear narrative, helped along by cutscenes and voiceover work taken from the original game and repurposed. I edited cutscenes and audio to fit the story of the Zombies experience which added greatly to the atmosphere of the map and helped greatly to convey the story I was going for. I wanted to keep the narrative close to that of the original game, but with Zombies instead of a Xenomorph.</p>
+                                    <p>You're part of a team sent to Sevastopol Station aboard The Torrens following Weylan-Yutani recieving a distress signal from Colonial Marshal Waits. The message asks for immediate help to deal with the reanimation of the station's residents, however your primary objective from the Company is to investigate the status of the station and relay your findings to the Seegson response team. All other considerations secondary... crew expendable.</p>
+                                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=817550789" target="_blank" class="btn btn-lg new_btn btn_black">Download on Steam</a>
+                                    <a href="https://www.artstation.com/artwork/XAm2l" target="_blank" class="btn btn-lg new_btn btn_black">View Screenshots on ArtStation</a>
+                                    <a href="https://github.com/MattFiler/zm_alien_isolation/tree/master/usermaps/zm_alien_isolation/scripts/zm" target="_blank" class="btn btn-lg new_btn btn_black">View Source on GitHub</a>
+                                    <a href="project_alienzombies.html" class="btn btn-lg new_btn btn_black">Read more...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alien Isolation Mod Tools -->
+        <div class="jumbotron alienmodtools">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <h1>Alien: Isolation Mod Tools</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Solo Project</span>
+                                            <span class="badge badge-secondary">Alien: Isolation</span>
+                                            <span class="badge badge-secondary">C# WinForms</span>
+                                            <span class="badge badge-dark">Tool Programmer</span>
+                                            <span class="badge badge-dark">Reverse Engineering</span>
+                                        </h5>
+                                        <p>A toolkit for modifying game configurations, AI behaviours, UI, textures, and more.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#aimodtools_panel">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container'><img src="IMG/modtools_placeholder.jpg" style="width:100%;"><!--<iframe src='about:blank' data-src='x'>--></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="aimodtools_panel">
+                                <div class="pt-3">
+                                    <!--<div class="mobile_only"><p><div class='embed-container youtube-player' data-id='x'></div></p></div>-->
+                                    <p>An ongoing project in my spare time, the Alien: Isolation Mod Tools are a set of tools for modifying a wide range of content across the game Alien: Isolation, from simple game configurations, to AI behaviour trees, and recently textures/UI through reverse engineering of the game's archive formats.</p>
+                                    <p>The project has been a great lesson in how AAA titles are constructed from the ground up, as Alien: Isolation itself is built upon a custom engine known as Cathode - the tools for which have never been released publicly. Going in blind like this has been interesting to figure out through trial and error certain methods that were taken to create the game and engine, and over the years of creating these tools I've been lucky enough to have the chance to speak to some of the game's original developers to get first-hand insight into the production of the title.</p>
+                                    <p>My work modding Alien: Isolation has been <a href="https://www.pcgamer.com/uk/alien-isolations-lost-intro-sequence/" target="_blank">covered in the news</a> a number of times!</p>
+                                    <p>Check out the project on GitHub, where the tools are completely open source. I've recently branched into two repos, with the newer of the two being dedicated to the development of a standalone tool which can explore the game's archive files.</p>
+                                    <a href="https://github.com/MattFiler/LegendPlugin" target="_blank" class="btn btn-lg new_btn btn_black">Main Editor on GitHub (LegendPlugin)</a>
+                                    <a href="https://github.com/MattFiler/AlienPAK" target="_blank" class="btn btn-lg new_btn btn_black">Secondary Editor on GitHub (AlienPAK)</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACM Overhaul -->
+        <div class="jumbotron acmoverhaul">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <h1>Aliens: Colonial Marines Overhaul</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Team of 3</span>
+                                            <span class="badge badge-secondary">Aliens: Colonial Marines</span>
+                                            <span class="badge badge-dark">Publicity/Promotion</span>
+                                            <span class="badge badge-dark">Testing</span>
+                                        </h5>
+                                        <p>A project to improve visual and AI quality in Aliens: Colonial Marines.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#acmoverhaul_panel">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container youtube-player' data-id='QnnHKZlbKZM'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="acmoverhaul_panel">
+                                <div class="pt-3">
+                                    <div class="mobile_only"><p><div class='embed-container youtube-player' data-id='QnnHKZlbKZM'></div></p></div>
+                                    <p>"TemplarGFX's ACM Overhaul" was a mod aimed to rework Aliens: Colonial Marines, providing improved graphical quality and AI behvaiour. I created promotional material for the project and helped with playtests of new mod builds. The project was covered in a range of online news outlets including IGN, PC Gamer, Polygon and Kotaku.</p>
+                                    <a href="http://aliensoverhaul.mattfiler.co.uk/" target="_blank" class="btn btn-lg new_btn btn_black">Visit Website</a>
+                                    <a href="https://www.moddb.com/mods/templargfxs-acm-overhaul/" target="_blank" class="btn btn-lg new_btn btn_black">Download on ModDB</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EOC -->
+        <div class="jumbotron eociv">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <h1>Evolution of Combat</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Team of 2</span>
+                                            <span class="badge badge-secondary">Jedi Knight: Jedi Academy</span>
+                                            <span class="badge badge-dark">Publicity/Promotion</span>
+                                            <span class="badge badge-dark">Launcher</span>
+                                            <span class="badge badge-dark">UI</span>
+                                        </h5>
+                                        <p>A total conversion mod for Jedi Academy adding a range of new features and improvements.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#eoc_panel">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container youtube-player' data-id='JbkY4Dj_07A'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="eoc_panel">
+                                <div class="pt-3">
+                                    <div class="mobile_only"><p><div class='embed-container youtube-player' data-id='JbkY4Dj_07A'></div></p></div>
+                                    <p>One of the earliest modding projects I was involved with was Evolution of Combat IV for Jedi Academy. For the mod, I produced an auto-updating launcher and developed the in-game menu system. I was also the "community manager" producing regular development updates in the run-up to release, as well as preview videos and a trailer.</p>
+                                    <a href="http://eociv.mattfiler.co.uk/" target="_blank" class="btn btn-lg new_btn btn_black">Visit Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Websites Section -->
+    <section id="websites_section">
+        <h1 class="section_title">Websites</h1>
+
+        <!-- ARTSTATION -->
+        <div class="jumbotron artstation">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <h1>3D Historic Site Explorer</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Client Project</span>
+                                            <span class="badge badge-secondary">JavaScript</span>
+                                            <span class="badge badge-dark">Lead Programmer</span>
+                                            <span class="badge badge-dark">Network Engineer</span>
+                                            <span class="badge badge-dark">Technical Advisor</span>
+                                        </h5>
+                                        <p>A prototype demo for a National Lottery funding bid created for Keep Wales Tidy.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#artstation_panel">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container'><img src="IMG/siteexplorer_placeholder.jpg" style="width:100%;"><!--<iframe src='about:blank' data-src='x'>--></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="artstation_panel">
+                                <div class="pt-3">
+                                    <!--<div class="mobile_only"><p><div class='embed-container youtube-player' data-id='x'></div></p></div>-->
+                                    <p>As part of a 10 week internship during the summer of 2018 I developed a WebGL application for a project known as ARTSTATION which works with Keep Wales Tidy to promote historical wells around Wales. The application was created as a tech demo to show to the Heritage Lottery project in order to secure the funding for the next section of their project. The demo was presented in October 2018, after which the team recieved full funding with highly positive comments about the demo and the potential for future implementation.</p>
+                                    <p>I was the sole programmer on the project and was also responsible for setting up and maintaining the network back-end during the development.</p>
+                                    <p>The project taught me a lot about working with clients as although I've done a lot of client work before this was by far the most hands-on. Direction was completely driven by the client through weekly meetings and daily email progress reports. In our weekly meetings we would review progress and they would outline what they wanted to be added next. As the client was from an artistic background, this also was a good teaching of managing expectations with technical limitations, especially in a cross-platform WebGL app!</p>
+                                    <p>Using THREE.js and an open source library named Potree, I developed an interactive map-based system which allowed users to explore regions of Wales and enter locations of interest to view drone mapped pointcloud data of the well sites and learn more about the history of the location.</p>
+                                    <p>Videos recorded by the drone were also placed in these pointcloud environments by parsing the drone's GPS data, allowing for immersive video experiences that mapped to the correct pitch, yaw and position as when they were captured. I created a camera system that tracked these videos through the environment allowing for a connection between  the pre-recorded "story" content and the realtime rendered pointcloud data.</p>
+                                    <p>A host of the demo can be viewed below - be aware as this was a demo, the art and design is mostly placeholder and was not intended for public use. Other features may also be incomplete or not function as expected. Do not expect fast loading times!</p>
+                                    <a href="http://artstation.mattfiler.co.uk/" class="btn btn-lg new_btn btn_black" target="_blank">Visit Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Homebase POS -->
+        <div class="jumbotron homebasepos">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <h1>Homebase Signage Generator</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Solo Project</span>
+                                            <span class="badge badge-secondary">PHP/JavaScript</span>
+                                            <span class="badge badge-dark">UI/UX Design</span>
+                                            <span class="badge badge-dark">Tool Programmer</span>
+                                            <span class="badge badge-dark">Accessibility</span>
+                                        </h5>
+                                        <p>A UX-focussed web app for producing product signage within Homebase stores.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#homebase_panel">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container'><img src="IMG/homebase_placehodler.jpg" style="width:100%;"><!--<iframe src='about:blank' data-src='x'>--></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="homebase_panel">
+                                <div class="pt-3">
+                                    <!--<div class="mobile_only"><p><div class='embed-container youtube-player' data-id='x'></div></p></div>-->
+                                    <p>The "Homebase POS Generator" was a site I made while working at Homebase to overcome the internal process of creating signage for product displays in-store. The process required us to download template signage from the company intranet, adjust the price, title and description manually through PowerPoint (which was not installed on all computers) and then print. As you can imagine, doing this for many items in a day took up a considerable amount of time - so I saw an opportunity for a solution!</p>
+                                    <p>In my free time I created a site that required only three to four simple inputs - item code, item name, item description and a previous item price if it was reduced. Sample titles and descriptions were provided to the user through existing data that was pulled from the internal company item database and public website to speed up the process further. Additionally, when the signage was printed, the edited titles and descriptions were stored in a database that was pulled from in future printing of that same item - so without realising it employees were saving time for other people who may print that signage in future! Price was always pulled from the internal database so couldn't be incorrect at the time of printing, as this same system was used for all till points.</p>
+                                    <p>Not only was it a smart back-end, the site had a friendly front-end UI and a fluid UX. As a result, it quickly became adoped as the standard process in my store and saved countless hours during the working day. An added unseen bonus was that it unified all signs throughout the store, whereas previously a lot of signs had varying pricing placements due to the less restrictive nature of the PowerPoint templates. This made it easier for shoppers to identify item prices and gave a tidier appearance throughout.</p>
+                                    <p>Alongside the desktop version of the site, I also created a mobile interface which allowed staff to scan barcodes on shop floor to add to a "queue" that was accessible on the desktop version to print. This was very useful for printing large amounts of signage and also saved considerable time writing down item codes!</p>
+                                    <p>The staff at my store found the tool helpful so it was eventually demonstrated to the regional manager on a visit who promptly implemented it in a number of other stores in the region.</p>
+                                    <p>As this project uses a private company API and is still in use internally I can't provide a link to the site, however a library of screenshots can be seen at the links below to give you an idea of the user interface and output it produced.</p>
+                                    <a href="https://imgur.com/a/mBOa1IX" class="btn btn-lg new_btn btn_black" target="_blank">Desktop Screenshots</a>
+                                    <a href="https://imgur.com/a/PO1dIEX" class="btn btn-lg new_btn btn_black" target="_blank">Mobile Screenshots</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ePlanner -->
+        <div class="jumbotron eplanner">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <h1>PCSA ePlanner</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Client Project</span>
+                                            <span class="badge badge-secondary">PHP/JavaScript/Swift</span>
+                                            <span class="badge badge-dark">User Testing</span>
+                                            <span class="badge badge-dark">Database Management</span>
+                                            <span class="badge badge-dark">Security</span>
+                                        </h5>
+                                        <p>A cross-platform app for students and staff to track timetables, behaviour, and progress.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#eplanner_panel">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container youtube-player' data-id='xl9fSgTxlQY'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="eplanner_panel">
+                                <div class="pt-3">
+                                    <div class="mobile_only"><p><div class='embed-container youtube-player' data-id='xl9fSgTxlQY'></div></p></div>
+                                    <p>The PCSA ePlanner was a project that I developed in my final years at Priory Community School and into my first year of college. It was a web platform that replaced the paper planners given to students at the school, the idea being that it would not only reduce the yearly costs of buying the paper planners for all students, but that it would increase useage as the students would be more likely to use an app on their phones than a physical binder.</p>
+                                    <p>The system allowed multiple levels of access through accounts for students, teachers, leadership team, admin and parents. Students, staff and parents could sign up with their emails through the site, which would then identify which access level to give them. Confirmation emails were then sent to the user and they were taken through an account setup process.</p>
+                                    <p>It was important to make sure parents were properly verified before being able to view a student's information, so a process of verification by the student's tutor was set up. Only verified parents could access their child's data, being verified by a permission slip that required the same email on the account to be used.</p>
+                                    <p>I created an early proof of concept of the project to present to the leadership team at the school who consequently backed the continuation of it through the full release we carried out. I was the sole developer on the project and worked on it on and off over the span of around three years. This included not only developing the site, but promoting it through advertisments in the school and presentations to staff and students.</p>
+                                    <p>The site allowed students to view timetables, behaviour points, improvement feedback (carried out by teachers) and more. It also featured a social system where users could create posts that other users could view and comment on, intended for homework help - of course with a heavy censoring and filtering system!</p>
+                                    <p>The project was developed in PHP and JavaScript, with AJAX inputs providing a fluid user experience. Not only was the site accessible on desktop and mobile through the responsively designed website, but it was also able to be downloaded from the iOS App Store. I created the iOS app in Swift and published it through the school's exisiting Apple Developer account.</p>
+                                    <p>In the full release, we allowed a full year group (~200 students) to use the platform for a year rather than the paper planner system. It was a resounding success with very positive feedback from students and staff, however the school ultimately decided against the system due to the impact of promoting the use of smartphones in the classroom.</p>
+                                    <p>A re-host of the site can be found below, accessable via the login of "DEMO_USER" and "DEMO_PASSWORD". This is a student login so all student features are available to you. The account has already gone through the setup steps.</p>
+                                    <a href="http://eplannerdemo.mattfiler.co.uk/" class="btn btn-lg new_btn btn_black" target="_blank">Visit Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hub City -->
+        <div class="jumbotron hubcity">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <h1>Hub City</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Client Project</span>
+                                            <span class="badge badge-dark">SEO</span>
+                                            <span class="badge badge-dark">Web Design</span>
+                                        </h5>
+                                        <p>A regularly restyled site themed towards upcoming Hip-Hop events.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#hubcity_panel">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container'><img src="IMG/hub_placeholder.jpg" style="width:100%;"><!--<iframe src='about:blank' data-src='x'>--></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="hubcity_panel">
+                                <div class="pt-3">
+                                    <!--<div class="mobile_only"><p><div class='embed-container youtube-player' data-id='x'></div></p></div>-->
+                                    <p>One of many local organisations I managed websites for, Hub City was a popup Hip Hop / RnB club event in Weston super Mare. I created and maintained their website alongside managing all SEO including adding the event to Google Maps and displaying dates and details in the search results of current events.</p>
+                                    <a href="http://archive.mattfiler.co.uk/HUB-CITY/" class="btn btn-lg new_btn btn_black" target="_blank">Visit Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Videos Section -->
+    <section id="videos_section">
+        <h1 class="section_title">Videos</h1>
+
+        <!-- Manor Farm -->
+        <div class="jumbotron manorfarm">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <h1>Manor Farm Cattery</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Client Project</span>
+                                            <span class="badge badge-dark">Interviewing</span>
+                                            <span class="badge badge-dark">B-Roll</span>
+                                            <span class="badge badge-dark">Editing</span>
+                                        </h5>
+                                        <p>A promotional video for a cattery in Kewstoke, Weston-super-Mare.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#manorfarm_panel">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container youtube-player' data-id='zFBNIiIOcuY'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="manorfarm_panel">
+                                <div class="pt-3">
+                                    <div class="mobile_only"><p><div class='embed-container youtube-player' data-id='zFBNIiIOcuY'></div></p></div>
+                                    <p>I was approached by a local cattery to create a promotional video showcasing their facilities in an easily consumable style. I worked with them for just over a week to produce a video that they could use on their Facebook and website.</p>
+                                    <p>After releasing the video they saw an increase in business and commented that it was the "best marketing money [they had] ever spent".</p>
+                                    <a href="http://youtube.com/watch?v=zFBNIiIOcuY" class="btn btn-lg new_btn btn_black" target="_blank">Watch Video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VANS Volunteering -->
+        <div class="jumbotron vans">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <h1>Volunteer's Week Promo</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Client Project</span>
+                                            <span class="badge badge-dark">Interviewing</span>
+                                            <span class="badge badge-dark">Research</span>
+                                            <span class="badge badge-dark">B-Roll</span>
+                                            <span class="badge badge-dark">Editing</span>
+                                        </h5>
+                                        <p>A promotional video for Voluntary Action North Somerset detailing some client's success stories.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#vans_panel">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container'><iframe src='https://player.vimeo.com/video/90165669' frameborder="0" allowfullscreen></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="vans_panel">
+                                <div class="pt-3">
+                                    <div class="mobile_only"><p><div class='embed-container youtube-player' data-id='https://player.vimeo.com/video/90165669'></div></p></div>
+                                    <p>Voluntary Action North Somerset is a volunteering agency based in Weston super Mare which offers various services to volunteer groups in the local area. I worked with them for six months as part of my Duke of Edinburgh's award to create a video for National Volunteers' Week.</p>
+                                    <a href="https://vimeo.com/90165669" class="btn btn-lg new_btn btn_black" target="_blank">Watch Video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Obscurity -->
+        <div class="jumbotron obscurity">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <h1>Obscurity</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Team of 15+</span>
+                                            <span class="badge badge-dark">Editor</span>
+                                            <span class="badge badge-dark">Publicity/Promotion</span>
+                                            <span class="badge badge-dark">Camera Operator</span>
+                                        </h5>
+                                        <p>A feature length film created to raise money for charity.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#obscurity_panel">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container youtube-player' data-id='xcFPK0ni4Yg'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="obscurity_panel">
+                                <div class="pt-3">
+                                    <div class="mobile_only"><p><div class='embed-container youtube-player' data-id='xcFPK0ni4Yg'></div></p></div>
+                                    <p>This was a feature-length film that I shot and edited over three months at secondary school, it was a great learning curve for me to find out just how challenging creating a full 45 minute film is - even a super low budget indie one! We premiered the film of an evening at our school and donated all proceeds charity.</p>
+                                    <a href="http://youtube.com/watch?v=xcFPK0ni4Yg" class="btn btn-lg new_btn btn_black" target="_blank">Watch Film</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Autotrader Film -->
+        <div class="jumbotron autotraderfilm">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-2 card-sm card-body my-auto">
+                        <div class="accordion-panel-title collapsed">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 my-auto mobile_fullwidth">
+                                        <h1>Autotrader Awards</h1>
+                                        <h5>
+                                            <span class="badge badge-info">Client Project</span>
+                                            <span class="badge badge-dark">Interviewing</span>
+                                            <span class="badge badge-dark">B-Roll</span>
+                                            <span class="badge badge-dark">Editing</span>
+                                        </h5>
+                                        <p>A video showing clients of an employee at Autotrader with her personal experiences.</p>
+                                        <a href="" class="btn btn-lg new_btn btn_black" data-toggle="collapse" data-target="#autotrader_panel">Read more...</a>
+                                    </div>
+                                    <div class="col-sm-4 my-auto desktop_only">
+                                        <div class='embed-container youtube-player' data-id='6mIKQ-SpTL8'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="autotrader_panel">
+                                <div class="pt-3">
+                                    <div class="mobile_only"><p><div class='embed-container youtube-player' data-id='6mIKQ-SpTL8'></div></p></div>
+                                    <p>I shot and edited a film for an employee at Autotrader who was nominated for an award at their yearly conference. To do so, I followed her around to a number of clients and interviewed them about their experiences of working with her and Autotrader as a whole. The final film was shown at the awards ceremony and the employee subsequently won.</p>
+                                    <a href="http://youtube.com/watch?v=6mIKQ-SpTL8" class="btn btn-lg new_btn btn_black" target="_blank">Watch Video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <div class="container">
+        <div class="col-md-12 text-right">
+            <br>
+            <h3>
+                <a href="http://twitter.com/MattFiler"><i class="fab fa-twitter-square footer_links"></i></a> 
+                <a href="https://www.linkedin.com/in/mattfiler/"><i class="fab fa-linkedin footer_links"></i></a> 
+                <a href="http://github.com/MattFiler"><i class="fab fa-github-square footer_links"></i></a> 
+                <a href="https://mattfiler.itch.io/"><i class="fab fa-itch-io footer_links"></i></a>
+                <a href="http://youtube.com/MatthewFiler"><i class="fab fa-youtube-square footer_links"></i></a>
+                <a href="mailto:matthew.filer@hotmail.co.uk" target="_blank"><i class="fa fa-envelope-square footer_links"></i></a>
+            </h3>
+            <br><br><br><br>
+        </div>
+    </div>
+    
+    <!-- Bootstrap/jQuery -->
+    <script src="JS/jquery-3.4.1.min.js"></script>
+    <script src="JS/umd/popper.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+    <!-- Parallax -->
+    <script src="JS/parallax.min.js"></script>
+    
+    <!-- Scroll jump buttons -->
+    <script>
+        scrollTo("games");
+        scrollTo("mods");
+        scrollTo("websites");
+        scrollTo("videos");
+        
+        $(".top_jump").click(function() {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
+        
+        function scrollTo(section_name) {
+            $("." + section_name + "_jump").click(function() {
+                $("html, body").animate({ scrollTop: ($("#" + section_name + "_section").offset().top)-40 }, "slow");
+            });
+        }
+    </script>
+
+    <!-- ScrollReveal -->
+    <script src="JS/scrollreveal.min.js"></script>
+    <script>
+        //ScrollReveal().reveal('#games_section', { distance: '50px' });
+        //ScrollReveal().reveal('#mods_section', { distance: '50px' });
+        //ScrollReveal().reveal('#websites_section', { distance: '50px' });
+        //ScrollReveal().reveal('#videos_section', { distance: '50px' });
+    </script>
+
+    <!-- Youtube Optimiser -->
+    <script src="JS/youtube-optimise.js"></script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39768980-6"></script>
