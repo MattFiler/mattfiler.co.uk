@@ -121,6 +121,9 @@ a {
     .divider {
         height: 20px;
     }
+    .nav-link {
+        padding: 0.20rem 0.5rem;
+    }
 }
 @media only screen and (max-width: 991px) {
     .desktop_only {
@@ -238,6 +241,10 @@ a {
 }
 .superhot {
     background: url("../IMG/project_superhot.jpg") center no-repeat;
+    background-size: cover;
+}
+.plantgenerator {
+    background: url("../IMG/plantgenerator.jpg") center no-repeat;
     background-size: cover;
 }
 
