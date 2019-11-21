@@ -48,6 +48,9 @@ a {
 .nav-link:hover {
     color: white;
 }
+.h-50-mf { /* Replacement for Bootstrap's .h-50 */
+    min-height: 50%!important;
+}
 
 /* Custom elements */
 .new_btn {
