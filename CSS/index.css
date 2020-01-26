@@ -250,6 +250,29 @@ a {
     background: url("../IMG/plantgenerator.jpg") center no-repeat;
     background-size: cover;
 }
+.skyboxgenerator {
+    background: url("http://placehold.it/500x500") center no-repeat;
+    background-size: cover;
+    display:none; /* COMING SOON */
+}
+.dontwalkby {
+    background: url("http://placehold.it/500x500") center no-repeat;
+    background-size: cover;
+    display:none; /* COMING SOON */
+}
+.levelstreaming {
+    background: url("http://placehold.it/500x500") center no-repeat;
+    background-size: cover;
+    display:none; /* COMING SOON */
+}
+.rowbritannia {
+    background: url("../IMG/rowbritannia.jpg") center no-repeat;
+    background-size: cover;
+}
+.aliensisolationmod {
+    background: url("../IMG/aliensiolation.jpg") center no-repeat;
+    background-size: cover;
+}
 
 /* Responsive video player */
 .embed-container { 
