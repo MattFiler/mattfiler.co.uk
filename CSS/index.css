@@ -251,9 +251,8 @@ a {
     background-size: cover;
 }
 .skyboxgenerator {
-    background: url("http://placehold.it/500x500") center no-repeat;
+    background: url("../IMG/skybox_placeholder.jpg") center no-repeat;
     background-size: cover;
-    display:none; /* COMING SOON */
 }
 .dontwalkby {
     background: url("http://placehold.it/500x500") center no-repeat;
