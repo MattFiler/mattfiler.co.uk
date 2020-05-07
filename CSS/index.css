@@ -255,14 +255,12 @@ a {
     background-size: cover;
 }
 .dontwalkby {
-    background: url("http://placehold.it/500x500") center no-repeat;
+    background: url("../IMG/dwb_bg.jpg") center no-repeat;
     background-size: cover;
-    display:none; /* COMING SOON */
 }
 .levelstreaming {
-    background: url("http://placehold.it/500x500") center no-repeat;
+    background: url("../IMG/levelstreaming_bg.jpg") center no-repeat;
     background-size: cover;
-    display:none; /* COMING SOON */
 }
 .rowbritannia {
     background: url("../IMG/rowbritannia.jpg") center no-repeat;
@@ -270,6 +268,10 @@ a {
 }
 .aliensisolationmod {
     background: url("../IMG/aliensiolation.jpg") center no-repeat;
+    background-size: cover;
+}
+.stealthknight {
+    background: url("../IMG/knightgame.jpg") center no-repeat;
     background-size: cover;
 }
 
