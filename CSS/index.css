@@ -161,6 +161,7 @@ a {
 .angrybirds {
     background: url("../IMG/project_angrybirds.jpg") center no-repeat;
     background-size: cover;
+    display: none;
 }
 .hauntedhouse {
     background: url("../IMG/project_hauntedhouse.jpg") center no-repeat;
@@ -169,6 +170,7 @@ a {
 .leveldesign {
     background: url("../IMG/project_leveldesign_alt.jpg") center no-repeat;
     background-size: cover;
+    display: none;
 }
 .textadventuretool {
     background: url("../IMG/project_textadventuretool.jpg") center no-repeat;
@@ -197,6 +199,7 @@ a {
 .hubcity {
     background: url("../IMG/project_hubcity.jpg") center no-repeat;
     background-size: cover;
+    display: none;
 }
 .manorfarm {
     background: url("../IMG/project_manorfarm.jpg") center no-repeat;
