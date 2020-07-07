@@ -8,6 +8,7 @@ body {
     font-family: "Google Sans", sans-serif;
     color: white;
     background: white;
+    -webkit-font-smoothing: antialiased;
 }
 a {
     -webkit-tap-highlight-color: transparent;
