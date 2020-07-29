@@ -278,6 +278,10 @@ a {
     background: url("../IMG/stealthknight_bg.jpg") center no-repeat;
     background-size: cover;
 }
+.sceneio {
+    background: url("../IMG/sceneio_bg.jpg") center no-repeat;
+    background-size: cover;
+}
 
 /* Responsive video player */
 .embed-container { 
