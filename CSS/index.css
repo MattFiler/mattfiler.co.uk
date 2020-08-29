@@ -282,6 +282,10 @@ a {
     background: url("../IMG/sceneio_bg.jpg") center no-repeat;
     background-size: cover;
 }
+.artstation2020 {
+    background: url("../IMG/simile_placeholderbg.jpg") center no-repeat;
+    background-size: cover;
+}
 
 /* Responsive video player */
 .embed-container { 
