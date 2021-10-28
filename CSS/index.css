@@ -286,6 +286,14 @@ a {
     background: url("../IMG/simile_placeholderbg.jpg") center no-repeat;
     background-size: cover;
 }
+.ulxr {
+    background: url("../IMG/ulxr.jpg") right no-repeat;
+    background-size: cover;
+}
+.blocks {
+    background: url("../IMG/blocks.jpg") center no-repeat;
+    background-size: cover;
+}
 
 /* Responsive video player */
 .embed-container { 
