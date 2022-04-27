@@ -294,6 +294,10 @@ a {
     background: url("../IMG/blocks.jpg") center no-repeat;
     background-size: cover;
 }
+.controlpanel {
+    background: url("../IMG/rp-spi-test.jpg") center no-repeat;
+    background-size: cover;
+}
 
 /* Responsive video player */
 .embed-container { 
