@@ -298,6 +298,14 @@ a {
     background: url("../IMG/rp-spi-test.jpg") center no-repeat;
     background-size: cover;
 }
+.aurora {
+    background: url("../IMG/rp-spi-test.jpg") center no-repeat; /*TODO*/
+    background-size: cover;
+}
+.csalien {
+    background: url("../IMG/aliencs_bg.jpg") center no-repeat; 
+    background-size: cover;
+}
 
 /* Responsive video player */
 .embed-container { 
