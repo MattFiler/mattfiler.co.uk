@@ -306,6 +306,10 @@ a {
     background: url("../IMG/aliencs_bg.jpg") center no-repeat; 
     background-size: cover;
 }
+.thomasalien {
+    background: url("../IMG/thomasbg_web.jpg") center no-repeat; 
+    background-size: cover;
+}
 
 /* Responsive video player */
 .embed-container { 
