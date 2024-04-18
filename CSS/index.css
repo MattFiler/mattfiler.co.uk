@@ -310,6 +310,10 @@ a {
     background: url("../IMG/thomasbg_web.jpg") center no-repeat; 
     background-size: cover;
 }
+.microgestures {
+    background: url("../IMG/microgestures.jpg") center no-repeat; 
+    background-size: cover;
+}
 
 /* Responsive video player */
 .embed-container { 
