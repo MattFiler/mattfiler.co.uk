@@ -314,6 +314,10 @@ a {
     background: url("../IMG/microgestures.jpg") center no-repeat; 
     background-size: cover;
 }
+.barista {
+    background: url("../IMG/barista.jpg") center no-repeat; 
+    background-size: cover;
+}
 
 /* Responsive video player */
 .embed-container { 
