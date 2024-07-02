@@ -1,0 +1,196 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Product example for Bootstrap</title>
+
+    <link href="css/FontAwesome/stylesheet.css" rel="stylesheet">
+    <link href="css/GoogleSans/stylesheet.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <style>
+      body {
+        font-family: "Google Sans", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .top_banner {
+        background: url("img/splash_bg.jpg") no-repeat center;
+      }
+      .top_banner_container{
+        
+  max-width: 960px;
+      }
+      .new_btn {
+    font-size: 18px;
+    line-height:0;
+}
+.new_btn:hover {
+    background: transparent;
+    color: white;
+}
+.btn_white {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    border: 2px solid white;
+}
+.btn_white:hover {
+    color: white;
+}
+.btn_black {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    border: 2px solid black;
+}
+.btn_black:hover {
+    color: black;
+}
+
+@media only screen and (max-width: 482px) {
+    .supersmall_hide {
+        display: none;
+    }
+    .main_intro {
+        font-size: 40px !important;
+    }
+    .main_subintro {
+        font-size: 20px;
+    }
+    .mobile_fullwidth > img {
+        display: none;
+    }
+    .mobile_fullwidth > h1 {
+        font-size: 30px;
+    }
+    .mobile_fullwidth > h5 {
+        font-size: 17px;
+    }
+    .divider {
+        height: 20px;
+    }
+    .nav-link {
+        padding: 0.20rem 0.5rem;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .desktop_only {
+        display: none;
+    }
+    .mobile_fullwidth {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .main_intro {
+        font-size: 60px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .mobile_only {
+        display: none;
+    }
+    .main_intro {
+        font-size: 70px;
+    }
+}
+
+.projects {
+  margin-top: 20px;
+}
+
+.project_container {
+  border-radius: 25px;
+  background-color:#343a40!important;
+  overflow:hidden;
+  color:white;
+  text-align:center;
+  margin-bottom:20px;
+}
+.project_container_img {
+  min-width:100%;
+  height: 300px;
+  background: url("https://img.youtube.com/vi/7SEScSsG2Hg/maxresdefault.jpg");
+  background-size:cover;
+  background-position:center;
+}
+.project_container_text {
+  margin: 20px;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="position-relative overflow-hidden p-3 p-md-5 top_banner text-light">
+      <div class="container top_banner_container">
+          <div class="row h-50-mf">
+              <div class="col-sm-12 my-auto py-5">
+                  <h1 style="font-weight: bolder;" class="main_intro">Hey, I'm Matt!</h1>
+                  <h2 style="font-weight: normal;" class="main_subintro">I'm a Senior XR Engineer at <a href="https://www.ultraleap.com/" style="color:white;text-decoration:none;">Ultraleap</a>.</h2>
+                  <br>
+                  <h4 style="font-weight: bolder;" class="supersmall_hide">I have a strong background in programming for games, the web, and Windows apps. I'm familiar with Unity and Unreal, and have a wide range of experience in and out of the XR space.</h4>
+                  <h4 style="font-weight: bolder;" class="desktop_only">I graduated from UWE Bristol in 2020 having studied Games Technology BSc(Hons), achieving First Class Honours. I received The Dean's Award for Academic Excellence from 2017-19.</h4>
+                  <br class="supersmall_hide">
+                  <p>
+                      <a href="http://twitter.com/MattFiler" class="btn btn-lg new_btn btn_white mx-1" data-toggle="tooltip" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.linkedin.com/in/mattfiler" class="btn btn-lg new_btn btn_white mx-1" data-toggle="tooltip" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="http://github.com/MattFiler" class="btn btn-lg new_btn btn_white mx-1" data-toggle="tooltip" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                      <a href="https://mattfiler.itch.io/" class="btn btn-lg new_btn btn_white mx-1 supersmall_hide" data-toggle="tooltip" title="Itch.io" target="_blank"><i class="fab fa-itch-io"></i></a>
+                      <a href="http://youtube.com/MattFiler" class="btn btn-lg new_btn btn_white mx-1" data-toggle="tooltip" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+                      <a href="mailto:matthew.filer@hotmail.co.uk" class="btn btn-lg new_btn btn_white mx-1" data-toggle="tooltip" title="Email" target="_blank"><i class="fa fa-envelope"></i></a>
+                      <a href="cv_24.pdf" class="btn btn-lg new_btn btn_white mx-1 desktop_only" data-toggle="tooltip" title="My CV" target="_blank"><i class="fa fa-sticky-note"></i></a>
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <main>
+    <div class="container projects">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="project_container">
+            <div class="project_container_img">
+    
+            </div>
+            <div class="project_container_text">
+              <h2>Aurora</h2>
+              <p>One demo to bring together the best Leap Motion & Ultraleap XR hand interactions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="project_container">
+            <div class="project_container_img">
+    
+            </div>
+            <div class="project_container_text">
+              <h2>Aurora</h2>
+              <p>One demo to bring together the best Leap Motion & Ultraleap XR hand interactions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="project_container">
+            <div class="project_container_img">
+    
+            </div>
+            <div class="project_container_text">
+              <h2>Aurora</h2>
+              <p>One demo to bring together the best Leap Motion & Ultraleap XR hand interactions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  </body>
+</html>
