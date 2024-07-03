@@ -4,11 +4,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Matt Filer">
     <link rel="icon" href="favicon.ico">
 
-    <title>Product example for Bootstrap</title>
+    <title>Matt Filer</title>
+    <meta name="description" content="I'm Matt Filer, a Senior XR Engineer at Ultraleap in Bristol. In my spare time I develop OpenCAGE for Alien: Isolation!" />
+    <meta name="keywords" content="mattfiler, matt filer, game developer, programmer, tools, mods, modkit, alien, alien isolation mod tools" />
 
     <link href="css/FontAwesome/stylesheet.css" rel="stylesheet">
     <link href="css/GoogleSans/stylesheet.css" rel="stylesheet">
@@ -16,13 +17,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/youtube-optimise.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+      });
+  </script>
+
     <style>
       body {
         font-family: "Google Sans", sans-serif;
         -webkit-font-smoothing: antialiased;
       }
       .top_banner {
-        background: url("img/splash_bg.jpg") no-repeat center;
+        background-size: cover;
       }
       .top_banner_container{
         
@@ -111,22 +124,206 @@
   color:white;
   text-align:center;
   margin-bottom:20px;
+  padding:0;
+  border:0;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width:100%;
+}
+.project_container:hover{
+  -webkit-box-shadow: 0px 0px 75px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 75px -10px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 75px -10px rgba(0,0,0,0.75);
+  transform: scale(1.01);
 }
 .project_container_img {
   min-width:100%;
   height: 300px;
-  background: url("https://img.youtube.com/vi/7SEScSsG2Hg/maxresdefault.jpg");
   background-size:cover;
   background-position:center;
 }
 .project_container_text {
   margin: 20px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+.project_container_text > div > p {
+  margin-bottom:0;
+}
+.project_platform_info_container {
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+}
+.project_platform_info {
+  margin: 20px;
+}
+.project_release_year {
+  position:absolute; 
+  top:20px;
+  left:20px;
+}
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+    border-radius: 0.25rem;
+    background: #ededed;
+} 
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed,
+.embed-container img{ 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+.embed-container i {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+}
+
+.alienzombies {
+    background-image: url("../IMG/project_alienzombies.jpg");
+}
+.pong {
+    background-image: url("../IMG/project_pong.jpg");
+}
+.angrybirds {
+    background-image: url("../IMG/project_angrybirds.jpg") ;
+}
+.hauntedhouse {
+    background-image: url("../IMG/project_hauntedhouse.jpg") ;
+}
+.leveldesign {
+    background-image: url("../IMG/project_leveldesign_alt.jpg") ;
+}
+.textadventuretool {
+    background-image: url("../IMG/project_textadventuretool.jpg") ;
+}
+.eociv {
+    background-image: url("../IMG/project_eoc.jpg") ;
+}
+.acmoverhaul {
+    background-image: url("../IMG/project_acmoverhaul.jpg");
+}
+.spacerace {
+    background-image: url("../IMG/project_racetospace.jpg");
+}
+.artstation {
+    background-image: url("../IMG/project_artstation.jpg") ;
+}
+.homebasepos {
+    background-image: url("../IMG/project_homebasepos_alt.jpg") ;
+}
+.hubcity {
+    background-image: url("../IMG/project_hubcity.jpg") ;
+}
+.manorfarm {
+    background-image: url("../IMG/project_manorfarm.jpg") ;
+}
+.alienmodtools {
+    background-image: url("../IMG/project_alienmodtools.jpg") ;
+}
+.obscurity {
+    background-image: url("../IMG/project_obscurity.jpg") ;
+}
+.autotraderfilm {
+    background-image: url("../IMG/project_autotraderlynne.jpg");
+}
+.eplanner {
+    background-image: url("../IMG/project_eplanner.jpg");
+}
+.vans {
+    background-image: url("../IMG/project_vans.jpg") ;
+}
+.gloriouspropaganda {
+    background-image: url("../IMG/project_gloriouspropaganda.jpg") ;
+}
+.plannedobsolescence {
+    background-image: url("../IMG/project_plannedobsolescence.jpg") ;
+}
+.mariokart {
+    background-image: url("../IMG/project_mariokart_placeholder2.jpg") ;
+}
+.ipatch {
+    background-image: url("../IMG/project_ipatch.jpg") ;
+}
+.founders {
+    background-image: url("../IMG/project_founders-min.jpg") ;
+}
+.superhot {
+    background-image: url("../IMG/project_superhot.jpg") ;
+}
+.plantgenerator {
+    background-image: url("../IMG/plantgenerator.jpg") ;
+}
+.skyboxgenerator {
+    background-image: url("../IMG/skybox_placeholder.jpg") ;
+}
+.dontwalkby {
+    background-image: url("../IMG/dwb_bg.jpg") ;
+}
+.levelstreaming {
+    background-image: url("../IMG/levelstreaming_bg.jpg") ;
+}
+.rowbritannia {
+    background-image: url("../IMG/rowbritannia.jpg") ;
+}
+.aliensisolationmod {
+    background-image: url("../IMG/aliensiolation.jpg");
+}
+.stealthknight {
+    background-image: url("../IMG/stealthknight_bg.jpg")
+}
+.sceneio {
+    background-image: url("../IMG/sceneio_bg.jpg") ;
+}
+.artstation2020 {
+    background-image: url("../IMG/simile_placeholderbg.jpg") ;
+}
+.ulxr {
+    background-image: url("../IMG/ulxr.jpg");
+}
+.blocks {
+    background-image: url("../IMG/blocks.jpg") ;
+}
+.controlpanel {
+    background-image: url("../IMG/rp-spi-test.jpg") ;
+}
+.aurora {
+    background-image: url("../IMG/aurora-min.jpg");
+}
+.csalien {
+    background-image: url("../IMG/aliencs_bg.jpg");
+}
+.thomasalien {
+    background-image: url("../IMG/thomasbg_web.jpg");
+}
+.microgestures {
+    background-image: url("../IMG/microgestures.jpg");
+}
+.barista {
+    background-image: url("../IMG/barista.jpg") ;
 }
     </style>
   </head>
 
   <body>
-    <div class="position-relative overflow-hidden p-3 p-md-5 top_banner text-light">
+    <div class="position-relative overflow-hidden p-3 p-md-5 top_banner text-light" data-parallax="scroll" data-image-src="img/splash_bg.jpg">
       <div class="container top_banner_container">
           <div class="row h-50-mf">
               <div class="col-sm-12 my-auto py-5">
@@ -151,46 +348,344 @@
     </div>
 
     <main>
-    <div class="container projects">
+    <div class="container-xl projects">
       <div class="row">
-        <div class="col-md-3">
-          <div class="project_container">
-            <div class="project_container_img">
-    
+
+        <div class="col-md-12 py-4">
+          <h2>Professional Projects</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-xl-3">
+          <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#microgestures_modal">
+            <div class="microgestures project_container_img">
+              <div class="project_platform_info_container">
+                <div class="project_platform_info">
+                  <span class="badge bg-primary project_release_year">2024</span>
+                  <span class="badge bg-dark">Unity</span>
+                  <span class="badge bg-dark">Windows/Android</span>
+                  <span class="badge bg-dark">VR</span>
+                </div>
+              </div>
             </div>
             <div class="project_container_text">
-              <h2>Aurora</h2>
-              <p>One demo to bring together the best Leap Motion & Ultraleap XR hand interactions.</p>
+              <div>
+                <h2>Microgestures</h2>
+                <p>App showcasing high-fidelity finger tracking for Ultraleap's Hyperion showcase.</p>
+              </div>
+            </div>
+          </button>
+        </div>
+        <div class="modal fade" id="microgestures_modal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Microgestures</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md-6">
-          <div class="project_container">
-            <div class="project_container_img">
-    
+        <div class="col-xl-6">
+          <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#aurora_modal">
+            <div class="aurora project_container_img">
+              <div class="project_platform_info_container">
+                <div class="project_platform_info">
+                  <span class="badge bg-primary project_release_year">2023</span>
+                  <span class="badge bg-dark">Unity</span>
+                  <span class="badge bg-dark">Windows/Android</span>
+                  <span class="badge bg-dark">VR</span>
+                </div>
+              </div>
             </div>
             <div class="project_container_text">
-              <h2>Aurora</h2>
-              <p>One demo to bring together the best Leap Motion & Ultraleap XR hand interactions.</p>
+              <div>
+                <h2>Aurora</h2>
+                <p>One demo to bring together the best Leap Motion & Ultraleap XR hand interactions.</p>
+              </div>
+            </div>
+          </button>
+        </div>
+        <div class="modal fade" id="aurora_modal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Aurora</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class='embed-container youtube-player' data-id='7SEScSsG2Hg'></div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md-3">
-          <div class="project_container">
-            <div class="project_container_img">
-    
+        <div class="col-xl-3">
+          <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#barista_modal">
+            <div class="barista project_container_img">
+              <div class="project_platform_info_container">
+                <div class="project_platform_info">
+                  <span class="badge bg-primary project_release_year">2024</span>
+                  <span class="badge bg-dark">Unity</span>
+                  <span class="badge bg-dark">Windows</span>
+                  <span class="badge bg-dark">VR</span>
+                </div>
+              </div>
             </div>
             <div class="project_container_text">
-              <h2>Aurora</h2>
-              <p>One demo to bring together the best Leap Motion & Ultraleap XR hand interactions.</p>
+              <div>
+                <h2>Barista</h2>
+                <p>App showcasing tracked fiducial markers for Ultraleap's Hyperion showcase.</p>
+              </div>
+            </div>
+          </button>
+      </div>
+      <div class="modal fade" id="barista_modal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Barista</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class='embed-container youtube-player' data-id='ajYloY6Uvdc'></div>
             </div>
           </div>
         </div>
       </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-xl-6">
+        <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#launcher_modal">
+          <div class="ulxr project_container_img">
+            <div class="project_platform_info_container">
+              <div class="project_platform_info">
+                <span class="badge bg-primary project_release_year">2022</span>
+                <span class="badge bg-dark">Unity</span>
+                <span class="badge bg-dark">Windows/Android</span>
+                <span class="badge bg-dark">VR</span>
+              </div>
+            </div>
+          </div>
+          <div class="project_container_text">
+            <div>
+              <h2>Launcher</h2>
+              <p>An XR application launcher with hands-first interaction for Ultraleap's Gemini showcase.</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div class="modal fade" id="launcher_modal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Aurora</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class='embed-container youtube-player' data-id='7SEScSsG2Hg'></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3">
+        <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#cp_modal">
+          <div class="controlpanel project_container_img">
+            <div class="project_platform_info_container">
+              <div class="project_platform_info">
+                <span class="badge bg-primary project_release_year">2022-24</span>
+                <span class="badge bg-dark">Unity</span>
+                <span class="badge bg-dark">Windows/Linux/Android</span>
+              </div>
+            </div>
+          </div>
+          <div class="project_container_text">
+            <div>
+              <h2>Control Panel</h2>
+              <p>The core visualisation and settings management tool for Ultraleap's hand tracking service.</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div class="modal fade" id="cp_modal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Microgestures</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3">
+        <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#blocks_modal">
+          <div class="blocks project_container_img">
+            <div class="project_platform_info_container">
+              <div class="project_platform_info">
+                <span class="badge bg-primary project_release_year">2021</span>
+                <span class="badge bg-dark">Unity</span>
+                <span class="badge bg-dark">Windows/Android</span>
+                <span class="badge bg-dark">VR</span>
+              </div>
+            </div>
+          </div>
+          <div class="project_container_text">
+            <div>
+              <h2>Blocks</h2>
+              <p>Ultraleap's flagship demo: create blocks, icospheres, and rectangles with your hands!</p>
+            </div>
+          </div>
+        </button>
+    </div>
+    <div class="modal fade" id="blocks_modal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Barista</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class='embed-container youtube-player' data-id='ajYloY6Uvdc'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="row">
+
+    <div class="col-xl-3">
+      <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#dontwalkby_modal">
+        <div class="dontwalkby project_container_img">
+          <div class="project_platform_info_container">
+            <div class="project_platform_info">
+              <span class="badge bg-dark">Unity</span>
+              <span class="badge bg-dark">Windows/WebGL</span>
+            </div>
+          </div>
+        </div>
+        <div class="project_container_text">
+          <div>
+            <h2>Don't Walk By</h2>
+            <p>A hazard management game utilising Lemmings style AI behaviours.</p>
+          </div>
+        </div>
+      </button>
+    </div>
+    <div class="modal fade" id="dontwalkby_modal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Aurora</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class='embed-container youtube-player' data-id='7SEScSsG2Hg'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-3">
+      <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#rowbritannia_modal">
+        <div class="rowbritannia project_container_img">
+          <div class="project_platform_info_container">
+            <div class="project_platform_info">
+              <span class="badge bg-dark">Unity</span>
+              <span class="badge bg-dark">Windows</span>
+            </div>
+          </div>
+        </div>
+        <div class="project_container_text">
+          <div>
+            <h2>Polygon Fitness</h2>
+            <p>A game featuring integration with rowing machines which tracks stats to a public API.</p>
+          </div>
+        </div>
+      </button>
+  </div>
+  <div class="modal fade" id="rowbritannia_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Barista</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='ajYloY6Uvdc'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-6">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#ipatchpirates_modal">
+      <div class="ipatch project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2020</span>
+            <span class="badge bg-dark">Unity</span>
+            <span class="badge bg-dark">Android/WebGL</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>i-Patch Pirates</h2>
+          <p>A large project encompassing minigames about cybersecurity for Android, web, and arcade.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="ipatchpirates_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Microgestures</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+
     </div>
   </main>
   
+
+  <script>
+    ScrollReveal().reveal('.project_container', {
+        delay: 250,
+        useDelay: 'always',
+        //distance: '150px',
+        scale: 0.95,
+        duration: 500,
+        opacity: 0.1,
+        viewFactor: 0.2,
+        //reset: true,
+        interval: 80
+    })
+        </script>
+
   </body>
 </html>
