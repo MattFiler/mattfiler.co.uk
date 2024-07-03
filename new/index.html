@@ -16,18 +16,6 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/youtube-optimise.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    
-    <script type="text/javascript">
-      $(document).ready(function(){
-          $('[data-toggle="tooltip"]').tooltip();
-      });
-  </script>
 
     <style>
       body {
@@ -150,9 +138,9 @@
   width:100%;
 }
 .project_container:hover{
-  -webkit-box-shadow: 0px 0px 75px -10px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 75px -10px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 75px -10px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 75px -10px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 75px -10px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 75px -10px rgba(0,0,0,0.25);
   transform: scale(1.01);
 }
 .project_container_img {
@@ -218,6 +206,14 @@
     font-size: 50px;
     color: white;
     text-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+}
+
+
+.footer_links {
+    color: black;
+}
+.footer_links:hover {
+    color: grey;
 }
 
 .alienzombies {
@@ -383,7 +379,7 @@
 
       <div class="row">
 
-        <div class="col-xl-3">
+        <div class="col-xl-3 project_reveal">
           <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#microgestures_modal">
             <div class="microgestures project_container_img">
               <div class="project_platform_info_container">
@@ -417,7 +413,7 @@
           </div>
         </div>
 
-        <div class="col-xl-6">
+        <div class="col-xl-6 project_reveal">
           <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#aurora_modal">
             <div class="aurora project_container_img">
               <div class="project_platform_info_container">
@@ -451,7 +447,7 @@
           </div>
         </div>
 
-        <div class="col-xl-3">
+        <div class="col-xl-3 project_reveal">
           <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#barista_modal">
             <div class="barista project_container_img">
               <div class="project_platform_info_container">
@@ -489,7 +485,7 @@
 
     <div class="row">
 
-      <div class="col-xl-6">
+      <div class="col-xl-6 project_reveal">
         <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#launcher_modal">
           <div class="ulxr project_container_img">
             <div class="project_platform_info_container">
@@ -523,7 +519,7 @@
         </div>
       </div>
 
-      <div class="col-xl-3">
+      <div class="col-xl-3 project_reveal">
         <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#cp_modal">
           <div class="controlpanel project_container_img">
             <div class="project_platform_info_container">
@@ -556,7 +552,7 @@
         </div>
       </div>
 
-      <div class="col-xl-3">
+      <div class="col-xl-3 project_reveal">
         <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#blocks_modal">
           <div class="blocks project_container_img">
             <div class="project_platform_info_container">
@@ -593,7 +589,7 @@
   </div>
   <div class="row">
 
-    <div class="col-xl-3">
+    <div class="col-xl-3 project_reveal">
       <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#dontwalkby_modal">
         <div class="dontwalkby project_container_img">
           <div class="project_platform_info_container">
@@ -626,7 +622,7 @@
       </div>
     </div>
 
-    <div class="col-xl-3">
+    <div class="col-xl-3 project_reveal">
       <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#rowbritannia_modal">
         <div class="rowbritannia project_container_img">
           <div class="project_platform_info_container">
@@ -659,7 +655,7 @@
     </div>
   </div>
 
-  <div class="col-xl-6">
+  <div class="col-xl-6 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#ipatchpirates_modal">
       <div class="ipatch project_container_img">
         <div class="project_platform_info_container">
@@ -696,7 +692,7 @@
 </div>
 <div class="row">
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#sceneio_modal">
       <div class="sceneio project_container_img">
         <div class="project_platform_info_container">
@@ -729,7 +725,7 @@
     </div>
   </div>
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#artstation2020_modal">
       <div class="artstation2020 project_container_img">
         <div class="project_platform_info_container">
@@ -761,7 +757,7 @@
   </div>
 </div>
 
-<div class="col-xl-3">
+<div class="col-xl-3 project_reveal">
   <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#artstation_modal">
     <div class="artstation project_container_img">
       <div class="project_platform_info_container">
@@ -793,7 +789,7 @@
   </div>
 </div>
 
-<div class="col-xl-3">
+<div class="col-xl-3 project_reveal">
   <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#eplanner_modal">
     <div class="eplanner project_container_img">
       <div class="project_platform_info_container">
@@ -840,7 +836,7 @@
 </div>
 <div class="row">
 
-  <div class="col-xl-6">
+  <div class="col-xl-6 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#opencage_modal">
       <div class="alienmodtools project_container_img">
         <div class="project_platform_info_container">
@@ -872,7 +868,7 @@
     </div>
   </div>
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#thomas_modal">
       <div class="thomasalien project_container_img">
         <div class="project_platform_info_container">
@@ -903,7 +899,7 @@
     </div>
   </div>
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#csalien_modal">
       <div class="csalien project_container_img">
         <div class="project_platform_info_container">
@@ -935,7 +931,7 @@
 </div>
 
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#aliensisolationmod_modal">
       <div class="aliensisolationmod project_container_img">
         <div class="project_platform_info_container">
@@ -966,7 +962,7 @@
     </div>
   </div>
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#homebasepos_modal">
       <div class="homebasepos project_container_img">
         <div class="project_platform_info_container">
@@ -997,7 +993,7 @@
     </div>
   </div>
 
-  <div class="col-xl-6">
+  <div class="col-xl-6 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#alienzombies_modal">
       <div class="alienzombies project_container_img">
         <div class="project_platform_info_container">
@@ -1030,11 +1026,11 @@
 
 
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     
   </div>
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#acmoverhaul_modal">
       <div class="acmoverhaul project_container_img">
         <div class="project_platform_info_container">
@@ -1065,7 +1061,7 @@
     </div>
   </div>
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#eociv_modal">
       <div class="eociv project_container_img">
         <div class="project_platform_info_container">
@@ -1096,7 +1092,7 @@
     </div>
   </div>
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     
 </div>
 
@@ -1115,7 +1111,7 @@
 </div>
 <div class="row">
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#stealthknight_modal">
       <div class="stealthknight project_container_img">
         <div class="project_platform_info_container">
@@ -1148,7 +1144,7 @@
     </div>
   </div>
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#levelstreaming_modal">
       <div class="levelstreaming project_container_img">
         <div class="project_platform_info_container">
@@ -1181,7 +1177,7 @@
     </div>
   </div>
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#skyboxgenerator_modal">
       <div class="skyboxgenerator project_container_img">
         <div class="project_platform_info_container">
@@ -1213,7 +1209,7 @@
     </div>
   </div>
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#textadventuretool_modal">
       <div class="textadventuretool project_container_img">
         <div class="project_platform_info_container">
@@ -1248,7 +1244,7 @@
 
 
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#plantgenerator_modal">
       <div class="plantgenerator project_container_img">
         <div class="project_platform_info_container">
@@ -1281,7 +1277,7 @@
     </div>
   </div>
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#superhot_modal">
       <div class="superhot project_container_img">
         <div class="project_platform_info_container">
@@ -1314,7 +1310,7 @@
     </div>
   </div>
 
-  <div class="col-xl-6">
+  <div class="col-xl-6 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#mariokart_modal">
       <div class="mariokart project_container_img">
         <div class="project_platform_info_container">
@@ -1347,7 +1343,7 @@
     </div>
   </div>
 
-  <div class="col-xl-6">
+  <div class="col-xl-6 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#plannedobsolescence_modal">
       <div class="plannedobsolescence project_container_img">
         <div class="project_platform_info_container">
@@ -1382,7 +1378,7 @@
 
 
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#founders_modal">
       <div class="founders project_container_img">
         <div class="project_platform_info_container">
@@ -1415,7 +1411,7 @@
     </div>
   </div>
 
-  <div class="col-xl-3">
+  <div class="col-xl-3 project_reveal">
     <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#spacerace_modal">
       <div class="spacerace project_container_img">
         <div class="project_platform_info_container">
@@ -1453,11 +1449,39 @@
 
 
     </div>
+
+    
+    <div class="container">
+      <div class="col-md-12 py-5" style="text-align:right;">
+        <br>
+          <h3>
+              <a href="http://twitter.com/MattFiler"><i class="fab fa-twitter-square footer_links"></i></a> 
+              <a href="https://www.linkedin.com/in/mattfiler/"><i class="fab fa-linkedin footer_links"></i></a> 
+              <a href="http://github.com/MattFiler"><i class="fab fa-github-square footer_links"></i></a> 
+              <a href="https://mattfiler.itch.io/"><i class="fab fa-itch-io footer_links"></i></a>
+              <a href="http://youtube.com/MatthewFiler"><i class="fab fa-youtube-square footer_links"></i></a>
+              <a href="mailto:matthew.filer@hotmail.co.uk" target="_blank"><i class="fa fa-envelope-square footer_links"></i></a>
+          </h3>
+          <br>
+      </div>
+  </div>
   </main>
   
 
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/youtube-optimise.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
   <script>
-    ScrollReveal().reveal('.project_container', {
+    ScrollReveal().reveal('.project_reveal', {
         delay: 250,
         useDelay: 'always',
         //distance: '150px',
