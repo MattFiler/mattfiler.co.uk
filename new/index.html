@@ -104,6 +104,26 @@
         font-size: 60px;
     }
 }
+@media only screen and (max-width: 1199px) {
+    .project_container_text{
+      height:80px !important;
+    }
+    .project_container {
+      margin-left: 100px;
+      margin-right: 100px;
+      width: calc(100% - 200px) !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .project_container_text{
+      height:80px !important;
+    }
+    .project_container {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100% !important;
+    }
+}
 @media only screen and (min-width: 992px) {
     .mobile_only {
         display: none;
@@ -166,6 +186,10 @@
   position:absolute; 
   top:20px;
   left:20px;
+}
+
+.section_header {
+  text-align:center;
 }
 
 .embed-container { 
@@ -351,7 +375,7 @@
     <div class="container-xl projects">
       <div class="row">
 
-        <div class="col-md-12 py-4">
+        <div class="col-md-12 py-4 section_header">
           <h2>Professional Projects</h2>
         </div>
 
@@ -374,7 +398,7 @@
             <div class="project_container_text">
               <div>
                 <h2>Microgestures</h2>
-                <p>App showcasing high-fidelity finger tracking for Ultraleap's Hyperion showcase.</p>
+                <p>A VR/MR demo showcasing high-fidelity finger tracking for Ultraleap's Hyperion showcase.</p>
               </div>
             </div>
           </button>
@@ -408,7 +432,7 @@
             <div class="project_container_text">
               <div>
                 <h2>Aurora</h2>
-                <p>One demo to bring together the best Leap Motion & Ultraleap XR hand interactions.</p>
+                <p>A virtual reality demo showcasing Ultraleap's best practices when designing for hands-first XR experiences. Follow the tutorial bot around islands where you'll paint, create, and explore!</p>
               </div>
             </div>
           </button>
@@ -442,7 +466,7 @@
             <div class="project_container_text">
               <div>
                 <h2>Barista</h2>
-                <p>App showcasing tracked fiducial markers for Ultraleap's Hyperion showcase.</p>
+                <p>A VR demo showcasing tracked fiducial markers for Ultraleap's Hyperion showcase.</p>
               </div>
             </div>
           </button>
@@ -480,7 +504,7 @@
           <div class="project_container_text">
             <div>
               <h2>Launcher</h2>
-              <p>An XR application launcher with hands-first interaction for Ultraleap's Gemini showcase.</p>
+              <p>A hands-first application launcher with settings menus, help screens, and media displays. Created for Ultraleap's Gemini showcase to define the best practices when working with 2D UIs in XR.</p>
             </div>
           </div>
         </button>
@@ -547,7 +571,7 @@
           <div class="project_container_text">
             <div>
               <h2>Blocks</h2>
-              <p>Ultraleap's flagship demo: create blocks, icospheres, and rectangles with your hands!</p>
+              <p>A solid 'hello world' for hands-first interaction in XR: create blocks and icospheres with your hands!</p>
             </div>
           </div>
         </button>
@@ -574,6 +598,7 @@
         <div class="dontwalkby project_container_img">
           <div class="project_platform_info_container">
             <div class="project_platform_info">
+              <span class="badge bg-primary project_release_year">2020</span>
               <span class="badge bg-dark">Unity</span>
               <span class="badge bg-dark">Windows/WebGL</span>
             </div>
@@ -582,7 +607,7 @@
         <div class="project_container_text">
           <div>
             <h2>Don't Walk By</h2>
-            <p>A hazard management game utilising Lemmings style AI behaviours.</p>
+            <p>A hazard management game utilising Lemmings style AI behaviours, with level editor.</p>
           </div>
         </div>
       </button>
@@ -606,6 +631,7 @@
         <div class="rowbritannia project_container_img">
           <div class="project_platform_info_container">
             <div class="project_platform_info">
+              <span class="badge bg-primary project_release_year">2020</span>
               <span class="badge bg-dark">Unity</span>
               <span class="badge bg-dark">Windows</span>
             </div>
@@ -614,7 +640,7 @@
         <div class="project_container_text">
           <div>
             <h2>Polygon Fitness</h2>
-            <p>A game featuring integration with rowing machines which tracks stats to a public API.</p>
+            <p>A game based around real-world integration with rowing machines, tracking stats to a public API.</p>
           </div>
         </div>
       </button>
@@ -647,7 +673,7 @@
       <div class="project_container_text">
         <div>
           <h2>i-Patch Pirates</h2>
-          <p>A large project encompassing minigames about cybersecurity for Android, web, and arcade.</p>
+          <p>An online game built by PlayWest for students and staff of UWE Bristol, encompassing minigames about cybersecurity for Android, web, and arcade machines on campus.</p>
         </div>
       </div>
     </button>
@@ -668,6 +694,763 @@
 
   
 </div>
+<div class="row">
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#sceneio_modal">
+      <div class="sceneio project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2020</span>
+            <span class="badge bg-dark">DirectX</span>
+            <span class="badge bg-dark">Windows</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Scene Converter</h2>
+          <p>A tool with plugin support for importing scenes with custom material data for research projects.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="sceneio_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Aurora</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='7SEScSsG2Hg'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#artstation2020_modal">
+      <div class="artstation2020 project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2020</span>
+            <span class="badge bg-dark">JS/Python/PHP/ML</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Poetry Generator</h2>
+          <p>A web app which generates poems from a user's image to form a digital postcard.</p>
+        </div>
+      </div>
+    </button>
+</div>
+<div class="modal fade" id="artstation2020_modal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Barista</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class='embed-container youtube-player' data-id='ajYloY6Uvdc'></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-xl-3">
+  <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#artstation_modal">
+    <div class="artstation project_container_img">
+      <div class="project_platform_info_container">
+        <div class="project_platform_info">
+          <span class="badge bg-primary project_release_year">2018</span>
+          <span class="badge bg-dark">JS</span>
+        </div>
+      </div>
+    </div>
+    <div class="project_container_text">
+      <div>
+        <h2>Historic Explorer</h2>
+        <p>A 3D WebGL demo for a National Lottery funding bid: explore historic sites as GPS-tracked pointclouds.</p>
+      </div>
+    </div>
+  </button>
+</div>
+<div class="modal fade" id="artstation_modal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Microgestures</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-xl-3">
+  <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#eplanner_modal">
+    <div class="eplanner project_container_img">
+      <div class="project_platform_info_container">
+        <div class="project_platform_info">
+          <span class="badge bg-primary project_release_year">2013-14</span>
+          <span class="badge bg-dark">PHP/JS/Swift</span>
+        </div>
+      </div>
+    </div>
+    <div class="project_container_text">
+      <div>
+        <h2>PCSA ePlanner</h2>
+        <p>A cross-platform web app for students and staff to track timetables, behaviour, and progress.</p>
+      </div>
+    </div>
+  </button>
+</div>
+<div class="modal fade" id="eplanner_modal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Microgestures</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+<div class="row">
+
+  <div class="col-md-12 py-4 section_header">
+    <hr>
+    <h2>Personal Projects</h2>
+  </div>
+
+</div>
+<div class="row">
+
+  <div class="col-xl-6">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#opencage_modal">
+      <div class="alienmodtools project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2017-24</span>
+            <span class="badge bg-dark">Windows</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>OpenCAGE</h2>
+          <p>An extensive project to reverse engineer Alien: Isolation - developing a suite of mod tools that support complex scripting, behaviour trees, and import/export of various game content.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="opencage_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Aurora</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='7SEScSsG2Hg'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#thomas_modal">
+      <div class="thomasalien project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2023</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Thomas Isolation</h2>
+          <p>A mod to replace Alien: Isolation's Xenomorph with Thomas the Tank Engine using my OpenCAGE tools.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="thomas_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Microgestures</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#csalien_modal">
+      <div class="csalien project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2023</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Alien-Strike</h2>
+          <p>A mod to add Counter-Strike's Dust 2 into Alien: Isolation using my OpenCAGE tools.</p>
+        </div>
+      </div>
+    </button>
+</div>
+<div class="modal fade" id="csalien_modal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Barista</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class='embed-container youtube-player' data-id='ajYloY6Uvdc'></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#aliensisolationmod_modal">
+      <div class="aliensisolationmod project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2019</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Aliens: Isolation</h2>
+          <p>A mod which adds multiple Xenomorphs to Alien: Isolation using my OpenCAGE tools.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="aliensisolationmod_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Homebase Signage Generator</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='7SEScSsG2Hg'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#homebasepos_modal">
+      <div class="homebasepos project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2018</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>POS Generator</h2>
+          <p>A UX-focussed web app for producing product signage within Homebase stores.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="homebasepos_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Microgestures</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-6">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#alienzombies_modal">
+      <div class="alienzombies project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2016-17</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Alien Isolation Zombies</h2>
+          <p>A multiplayer map for Call of Duty: Black Ops 3, faithfully set within the world of Alien: Isolation, developed using Radiant Black.</p>
+        </div>
+      </div>
+    </button>
+</div>
+<div class="modal fade" id="alienzombies_modal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Barista</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class='embed-container youtube-player' data-id='ajYloY6Uvdc'></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="col-xl-3">
+    
+  </div>
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#acmoverhaul_modal">
+      <div class="acmoverhaul project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2016</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>ACM Overhaul</h2>
+          <p>A project to improve visual and AI quality in Aliens: Colonial Marines.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="acmoverhaul_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Homebase Signage Generator</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='7SEScSsG2Hg'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#eociv_modal">
+      <div class="eociv project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2016</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Jedi EOC</h2>
+          <p>A total conversion mod for Jedi Academy adding a range of new features and improvements.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="eociv_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Microgestures</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3">
+    
+</div>
+
+
+</div>
+
+
+
+<div class="row">
+
+  <div class="col-md-12 py-4 section_header">
+    <hr>
+    <h2>University Projects</h2>
+  </div>
+
+</div>
+<div class="row">
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#stealthknight_modal">
+      <div class="stealthknight project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2020</span>
+            <span class="badge bg-dark">Unity</span>
+            <span class="badge bg-dark">Windows</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>A Knightly Heist</h2>
+          <p>A game where you play as a time travelling knight stealing artefacts from a museum.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="stealthknight_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Homebase Signage Generator</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='7SEScSsG2Hg'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#levelstreaming_modal">
+      <div class="levelstreaming project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2020</span>
+            <span class="badge bg-dark">DirectX</span>
+            <span class="badge bg-dark">Windows</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Level Streaming</h2>
+          <p>A pipeline built in DX11 for creating environments that stream from disk at runtime.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="levelstreaming_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Microgestures</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#skyboxgenerator_modal">
+      <div class="skyboxgenerator project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2019-20</span>
+            <span class="badge bg-dark">Windows</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Sky Generator</h2>
+          <p>A toolkit for generating realistic skyboxes utilising machine learning and new technologies.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="skyboxgenerator_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Microgestures</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#textadventuretool_modal">
+      <div class="textadventuretool project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2019</span>
+            <span class="badge bg-dark">Unity/Unreal/OpenGL</span>
+            <span class="badge bg-dark">Windows</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Text Toolkit</h2>
+          <p>A designer focussed toolkit for producing text adventure games with no programming.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="textadventuretool_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Microgestures</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#plantgenerator_modal">
+      <div class="plantgenerator project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2019</span>
+            <span class="badge bg-dark">DirectX</span>
+            <span class="badge bg-dark">Windows</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Plant Generator</h2>
+          <p>A tool for editing plant models with a live preview in DirectX 11.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="plantgenerator_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Homebase Signage Generator</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='7SEScSsG2Hg'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#superhot_modal">
+      <div class="superhot project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2019</span>
+            <span class="badge bg-dark">Unity</span>
+            <span class="badge bg-dark">Windows</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Atari Superhot</h2>
+          <p>A demake of Superhot in the style of an Atari 2600 game.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="superhot_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Microgestures</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-6">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#mariokart_modal">
+      <div class="mariokart project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2019</span>
+            <span class="badge bg-dark">DirectX</span>
+            <span class="badge bg-dark">Windows</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Mario Kart DX12</h2>
+          <p>A custom game engine using DirectX12 with proprietary content management tools for a recreation of the game Mario Kart.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="mariokart_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Microgestures</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-6">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#plannedobsolescence_modal">
+      <div class="plannedobsolescence project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2019</span>
+            <span class="badge bg-dark">OpenGL</span>
+            <span class="badge bg-dark">Windows</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Planned Obsolescence</h2>
+          <p>A game where you play as an AI in control of a lab that's working to replace you, complete with a custom-made level editor.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="plannedobsolescence_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Microgestures</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#founders_modal">
+      <div class="founders project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2019</span>
+            <span class="badge bg-dark">Unity</span>
+            <span class="badge bg-dark">Windows/WebGL</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>The Founders</h2>
+          <p>A local multiplayer game designed for touchscreen.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="founders_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Homebase Signage Generator</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='7SEScSsG2Hg'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-3">
+    <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#spacerace_modal">
+      <div class="spacerace project_container_img">
+        <div class="project_platform_info_container">
+          <div class="project_platform_info">
+            <span class="badge bg-primary project_release_year">2018-19</span>
+            <span class="badge bg-dark">OpenGL</span>
+            <span class="badge bg-dark">Windows</span>
+          </div>
+        </div>
+      </div>
+      <div class="project_container_text">
+        <div>
+          <h2>Race to Mars</h2>
+          <p>A four player networked co-op game with the aim of reaching Mars.</p>
+        </div>
+      </div>
+    </button>
+  </div>
+  <div class="modal fade" id="spacerace_modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Microgestures</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
 
     </div>
   </main>
