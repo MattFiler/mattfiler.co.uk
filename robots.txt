@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /OLD/
-Disallow: /ArtStation/
-Disallow: /racetospace/
-Disallow: /pre-dec2018/

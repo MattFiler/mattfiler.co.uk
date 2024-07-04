@@ -1,0 +1,186 @@
+/*
+    Splash Page Styles
+    Created by Matt Filer (2019)
+*/
+
+/* Main body */
+body {
+    font-family: "Google Sans", sans-serif;
+    color: white;
+    background: white;
+    -webkit-font-smoothing: antialiased;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Boostrap restyles */
+.navbar {
+    height: 70px;
+}
+.jumbotron {
+    border-radius: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+}
+.card {
+    color: black;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    transition: background .15s ease-in-out;
+}
+.card:hover{
+    background: rgba(255, 255, 255, 0.99);
+}
+.navbar-collapse {
+    background: #333;
+}
+.nav-link {
+    color: lightgrey;
+}
+.nav-link:hover {
+    color: white;
+}
+.h-50-mf { /* Replacement for Bootstrap's .h-50 */
+    min-height: 50%!important;
+}
+
+/* Custom elements */
+.new_btn {
+    font-size: 18px;
+}
+.new_btn:hover {
+    background: transparent;
+    color: white;
+}
+.btn_white {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    border: 2px solid white;
+}
+.btn_white:hover {
+    color: white;
+}
+.btn_black {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    border: 2px solid black;
+}
+.btn_black:hover {
+    color: black;
+}
+.divider {
+    fill: white;
+    height: 70px;
+    width: 100%;
+}
+.top_container {
+    background-size: cover;
+}
+.section_title {
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.no_bottom_padding {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.footer_links {
+    color: black;
+}
+.footer_links:hover {
+    color: grey;
+}
+
+/* Mobile/desktop optimisations */
+@media only screen and (max-width: 482px) {
+    .supersmall_hide {
+        display: none;
+    }
+    .main_intro {
+        font-size: 40px !important;
+    }
+    .main_subintro {
+        font-size: 20px;
+    }
+    .mobile_fullwidth > img {
+        display: none;
+    }
+    .mobile_fullwidth > h1 {
+        font-size: 30px;
+    }
+    .mobile_fullwidth > h5 {
+        font-size: 17px;
+    }
+    .divider {
+        height: 20px;
+    }
+    .nav-link {
+        padding: 0.20rem 0.5rem;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .desktop_only {
+        display: none;
+    }
+    .mobile_fullwidth {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .main_intro {
+        font-size: 60px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .mobile_only {
+        display: none;
+    }
+    .main_intro {
+        font-size: 70px;
+    }
+}
+
+/* Project backgrounds */
+.alienzombies {
+    background: url("../img/project_alienzombies.jpg") center no-repeat;
+    background-size: cover;
+}
+
+/* Responsive video player */
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+    border-radius: 0.25rem;
+    background: #ededed;
+} 
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed,
+.embed-container img{ 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+.embed-container i {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+}
