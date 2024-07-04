@@ -11,8 +11,8 @@
     <meta name="description" content="I'm Matt Filer, a Senior XR Engineer at Ultraleap in Bristol. In my spare time I develop OpenCAGE for Alien: Isolation!" />
     <meta name="keywords" content="mattfiler, matt filer, game developer, programmer, tools, mods, modkit, alien, alien isolation mod tools" />
 
-    <link href="css/FontAwesome/stylesheet.css" rel="stylesheet">
     <link href="css/GoogleSans/stylesheet.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e81c1695fe.js" crossorigin="anonymous"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -169,6 +169,11 @@
 .project_release_year {
   position:absolute; 
   top:20px;
+  left:20px;
+}
+.project_external_link {
+  position:absolute; 
+  bottom:20px;
   left:20px;
 }
 
@@ -443,7 +448,14 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div>
+                <div class='embed-container youtube-player' data-id='qjTN1CX2ClM'></div><br>
+                <p>While working at Ultraleap I developed a number of feature demos for their hand tracking platform to showcase new functionality as it became available. This was an often challenging task, as the complex software and hardware stack we worked with was being built in parallel to any demo applications.</p>
+                <p>Ultraleap Hyperion introduced the concept of "Microgestures" - essentially a drive from our product team to push our tracking accuracy to its limits, and to be able to control interfaces using quite literal micro-gestures. The desire was to allow users to slide their fingers milimeters to perform interactions like swiping with UIs. We defined a variety of interfaces based largely off of mobile applications like Instagram Reels and Tinder.</p>
+                <p>Creating Microgestures required work across the stack including training a new tracking model, and implementing a new system at the hand tracking platform level to be able to enable/disable "hints" for features like microgestures to become active, which in-turn then required work in our tooling.</p>
+                <p>We built the Microgestures demo application alongside all of this work coming online, defining "what actually is a microgesture" in the process, and producing design guidelines and systems to enable the functionality for end users.</p>
+                <div class='embed-container youtube-player' data-id='kpzXk0ABDBY'></div><br>
+                <p>The end result is a solid glimpse into the potential of microgestures as an input method, and a fun demo which was taken to a number of trade shows and customer presentations.</p>
+                <a href="https://leap2.ultraleap.com/demos/microgestures-playground/" target="_blank" class="btn btn-secondary">Download</a>
               </div>
             </div>
           </div>
@@ -455,6 +467,7 @@
               <div class="project_platform_info_container">
                 <div class="project_platform_info">
                   <span class="badge bg-primary project_release_year">2023</span>
+                  <span class="badge bg-success project_external_link" title="Opens in new tab"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                   <span class="badge bg-dark">Unity</span>
                   <span class="badge bg-dark">Windows/Android</span>
                   <span class="badge bg-dark">VR</span>
@@ -498,7 +511,12 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <div class='embed-container youtube-player' data-id='ajYloY6Uvdc'></div>
+              <div class='embed-container youtube-player' data-id='ajYloY6Uvdc'></div><br>
+              <p>While working at Ultraleap I developed a number of feature demos for their hand tracking platform to showcase new functionality as it became available. This was an often challenging task, as the complex software and hardware stack we worked with was being built in parallel to any demo applications.</p>
+              <p>Ultraleap Hyperion tried to broaden the platform to be more for general computer vision (rather than just tracking hands), and as such introduced the ability to track fiducial markers. We were tasked with producing a demo to showcase fiducials alongside a brand new "hand-on-object" model which improved hand tracking robustness while holding objects.</p>
+              <p>We came up with the idea of "Barista", an application based on the concept of a legacy Ultraleap demo where users were guided through creating a Starbucks coffee. Users would play through the demo using a real-world tracked cup, table, and tablet.</p>
+              <p>I created the demo over a couple of weeks to showcase the marker tracking functionality at AWE USA, stripping back the legacy Starbucks demo for assets and rebuilding it entirely from scratch for the fiducial use case. We worked closely with the platform team to improve the quality of the marker tracking during the application's development, and built tooling improvements to better stabilise the fiducial frames in Unity.</p>
+              <p>The end result is a solid look at how fiducial markers can be used in parallel with hand tracking to provide a unique training experience in XR.</p>
             </div>
           </div>
         </div>
@@ -555,6 +573,7 @@
             <div class="project_platform_info_container">
               <div class="project_platform_info">
                 <span class="badge bg-primary project_release_year">2022-24</span>
+                <span class="badge bg-success project_external_link" title="Opens in new tab"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                 <span class="badge bg-dark">Unity</span>
                 <span class="badge bg-dark">Windows/Linux/Android</span>
               </div>
@@ -575,6 +594,7 @@
             <div class="project_platform_info_container">
               <div class="project_platform_info">
                 <span class="badge bg-primary project_release_year">2021</span>
+                <span class="badge bg-success project_external_link" title="Opens in new tab"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                 <span class="badge bg-dark">Unity</span>
                 <span class="badge bg-dark">Windows/Android</span>
                 <span class="badge bg-dark">VR</span>
@@ -620,13 +640,15 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
+            <div class='embed-container youtube-player' data-id='yLhB8RgLiNc'></div><br>
             <p>Don't Walk By is a hazard management game utilising Lemmings style AI behaviours. Players direct "peeps" around a level utilising various abilities available to them, with the aim of avoiding hazards in the environment.</p>
             <p>For the project I developed a bespoke suite of internal content management tools using WinForms, as well as the game's level population system and a user-facing level editor inside of the shipped game.</p>
             <p>The game started life as a university project and was quickly taken over by PlayWest to bring to release.</p>
             <p>After the game's release, I worked on tidying and upgrading the backend tools and systems. Part of this process involved porting the project to WebGL to serve as a basis for PlayWest's next title, Infiltrators.</p>
             <p>The game can be downloaded from the link below, along with a repo hosting the source code for our internal tools and the game's level system - all of which I developed, and have permission to share!</p>
             <a href="https://github.com/MattFiler/dwb-editor" target="_blank" class="btn btn-secondary">Tools Source</a>
-            <a href="#" target="_blank" class="btn btn-secondary">Download Game</a> <!-- todo -->
+            <a href="https://github.com/MattFiler/dont-walk-by" target="_blank" class="btn btn-secondary">Game Source</a>
+            <a href="https://mattfiler.itch.io/dont-walk-by" target="_blank" class="btn btn-secondary">Download Game</a>
           </div>
         </div>
       </div>
@@ -661,8 +683,8 @@
         <div class="modal-body">
           <p>Polygon Fitness was a game I rapidly developed over a couple of weeks alongside a 3D artist at PlayWest. The game connects to two rowing machines using an old API which I wrote a wrapper for to work in Unity. The project was commissioned by UWE Bristol for the national Row Britannia event, to encourage students to take part. As you row through the game you are taken past several landmarks from Bristol. Stats are tracked and logged to a server, which displays infographics on a public website.</p>
           <p>When the game was finished, UWE placed it in their lobby for students to use, and I provided live service updates to fix issues remotely. The game attracted attention from press and the organisers of the Row Britannia event, with a very positive reception.</p>
-          <p>Unfortunately the event was called off early due to the Coronavirus outbreak in March 2020.</p>
-          <p>No public build is available due to the requirement of the rowing machines to use the game, however a video will be recorded when I'm allowed back on site after lockdown!</p> <!-- todo -->
+          <p><img src="img/rowbritannia.jpg" width="100%"></p>
+          <p>Unfortunately the event was called off early due to the Coronavirus outbreak in March 2020. No public build is available due to the requirement of the rowing machines to use the game!</p>
         </div>
       </div>
     </div>
@@ -701,7 +723,6 @@
           <p>I was also in charge of creating a locker hacking minigame which had players guess part of a player's login code in order to break into that player's locker and steal their gold or buried treasure location. If a buried treasure location was found, it would be marked on the world map and players could explore to find it. Upon finding the treasure location the player had a chance to dig it up by playing a gem matching minigame. The aim of the locker hacking was to encourage players to pick stronger passwords and change them regularly.</p>
           <p>Pirates shipped openly to 30k staff and students at UWE Bristol for their Cyber Security Week - available on Android, WebGL, and arcade machines on campus.</p>
           <p>Following shipping to UWE, we secured a deal with Bristol Airport, and I was a part of the presentations to trial Pirates within the airport's offices. This trial led to securing funding for a Pirates redesign, focussing on security issues at the airport, for use in staff training, to be launched as a new title. This was also later followed up by multiple other locations, such as Gatwick.</p>
-          <p>Unfortunately due to the Coronavirus pandemic, these projects are currently on hold.</p>
           <a href="https://play.google.com/store/apps/details?id=com.playwest.ipatchpirates&hl=en_US" target="_blank" class="btn btn-secondary">Download for Android</a>
           <a href="https://playwe.st/ipatch/" target="_blank" class="btn btn-secondary" >Play Online</a>
         </div>
@@ -719,6 +740,7 @@
         <div class="project_platform_info_container">
           <div class="project_platform_info">
             <span class="badge bg-primary project_release_year">2020</span>
+            <span class="badge bg-success project_external_link" title="Opens in new tab"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
             <span class="badge bg-dark">DirectX</span>
             <span class="badge bg-dark">Windows</span>
           </div>
@@ -800,9 +822,11 @@
       <div class="modal-body">
         <p>As part of a 10 week internship during the summer of 2018 I developed a WebGL application for a project known as ARTSTATION which works with Keep Wales Tidy to promote historical wells around Wales. The application was created as a tech demo to show to the Heritage Lottery project in order to secure the funding for the next section of their project. The demo was presented in October 2018, after which the team recieved full funding with highly positive comments about the demo and the potential for future implementation.</p>
         <p>I was the sole programmer on the project and was also responsible for setting up and maintaining the network back-end during the development.</p>
+        <p><img src="img/artstation_3.jpg" width="100%"></p>
         <p>The project taught me a lot about working with clients as although I've done a lot of client work before this was by far the most hands-on. Direction was completely driven by the client through weekly meetings and daily email progress reports. In our weekly meetings we would review progress and they would outline what they wanted to be added next. As the client was from an artistic background, this also was a good teaching of managing expectations with technical limitations, especially in a cross-platform WebGL app!</p>
         <p>Using THREE.js and an open source library named Potree, I developed an interactive map-based system which allowed users to explore regions of Wales and enter locations of interest to view drone mapped pointcloud data of the well sites and learn more about the history of the location.</p>
         <p>Videos recorded by the drone were also placed in these pointcloud environments by parsing the drone's GPS data, allowing for immersive video experiences that mapped to the correct pitch, yaw and position as when they were captured. I created a camera system that tracked these videos through the environment allowing for a connection between  the pre-recorded "story" content and the realtime rendered pointcloud data.</p>
+        <p><img src="img/artstation_1.jpg" width="100%"></p>
         <p>A host of the demo can be viewed below - be aware as this was a demo, the art and design is mostly placeholder and was not intended for public use. Other features may also be incomplete or not function as expected. Do not expect fast loading times!</p>
         <a href="http://artstation.mattfiler.co.uk/" class="btn btn-secondary" target="_blank">Visit Demo</a>
       </div>
@@ -1053,9 +1077,11 @@
         <div class="modal-body">
           <p>The "Homebase POS Generator" was a site I made while working at Homebase to overcome the internal process of creating signage for product displays in-store. The process required us to download template signage from the company intranet, adjust the price, title and description manually through PowerPoint (which was not installed on all computers) and then print. As you can imagine, doing this for many items in a day took up a considerable amount of time - so I saw an opportunity for a solution!</p>
           <p>In my free time I created a site that required only three to four simple inputs - item code, item name, item description and a previous item price if it was reduced. Sample titles and descriptions were provided to the user through existing data that was pulled from the internal company item database and public website to speed up the process further. Additionally, when the signage was printed, the edited titles and descriptions were stored in a database that was pulled from in future printing of that same item - so without realising it employees were saving time for other people who may print that signage in future! Price was always pulled from the internal database so couldn't be incorrect at the time of printing, as this same system was used for all till points.</p>
+          <p><img src="https://i.imgur.com/r8VhMR4.png" width="100%"></p>
           <p>Not only was it a smart back-end, the site had a friendly front-end UI and a fluid UX. As a result, it quickly became adoped as the standard process in my store and saved countless hours during the working day. An added unseen bonus was that it unified all signs throughout the store, whereas previously a lot of signs had varying pricing placements due to the less restrictive nature of the PowerPoint templates. This made it easier for shoppers to identify item prices and gave a tidier appearance throughout.</p>
           <p>Alongside the desktop version of the site, I also created a mobile interface which allowed staff to scan barcodes on shop floor to add to a "queue" that was accessible on the desktop version to print. This was very useful for printing large amounts of signage and also saved considerable time writing down item codes!</p>
           <p>The staff at my store found the tool helpful so it was eventually demonstrated to the regional manager on a visit who promptly implemented it in a number of other stores in the region.</p>
+          <p><img src="https://i.imgur.com/4xaRVDY.png" width="100%"></p>
           <p>As this project uses a private company API and is still in use internally I can't provide a link to the site, however a library of screenshots can be seen at the links below to give you an idea of the user interface and output it produced.</p>
           <a href="https://imgur.com/a/mBOa1IX" class="btn btn-secondary" target="_blank">Desktop Screenshots</a>
           <a href="https://imgur.com/a/PO1dIEX" class="btn btn-secondary" target="_blank">Mobile Screenshots</a>
@@ -1221,6 +1247,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
+          <p><img src="img/heist.png" width="100%"></p>
           <p>Created in a team of six over a few days, this game places you in the role of a knight who has travelled into the future to steal artefacts from a museum.</p>
           <p>The aim of the game is to collect as many artefacts as possible and escape back through the portal before you're caught by the guards.</p>
           <p>This project was developed in just over a week as a game jam in a team of 6.</p>
@@ -1296,10 +1323,10 @@
         </div>
         <div class="modal-body">
           <div class='embed-container youtube-player' data-id='EAPCDv_zSNo'></div><br>
-          <div class='embed-container youtube-player' data-id='_1nD4fJb7CI'></div><br>
           <p>For my dissertation in my final year of University I worked towards creating a toolkit that could produce inexpensive and realistic skyboxes for games. While the project unfortunately didn't fully complete in the given time due to its complexity, it did manage to solve a couple of novel problems.</p>
           <p>The project aimed to solve the issue of rendering detailed skies in hardware-limited spaces, such as VR, due to the recent popularity of the Oculus Quest. While pre-rendered skies have been used for years, the project proposed a method of generating skies utilising machine learning to drive a volumetric ray marcher, which could generate realistic skies offline paired with an analytical sky model.</p>
           <p>To produce the project I worked with <a href="http://thomasbashfordrogers.com/" target="_blank">Dr Thomas Bashford-Rogers</a> and some unpublished experimental tools <a href="http://thomasbashfordrogers.com/Papers/PPCC.pdf" target="_blank">(now released)</a> for cloud classification.</p>
+          <div class='embed-container youtube-player' data-id='_1nD4fJb7CI'></div><br>
           <p>Unfortunately the machine learning side of the project wasn't completed in time for deadline, however the data collection toolkit and ground work for the renderer were completed. The data collection toolkit solved some novel issues, such as HDR upscaling. All of this is detailed in my final report.</p>
           <a href="https://drive.google.com/drive/folders/1enLPs4ZCTWCOOsVxPouQsWv_uPKrWArf?usp=sharing" class="btn btn-secondary">Reports</a>
           <a href="https://github.com/MattFiler/CTP-2019-20" class="btn btn-secondary">View Source on GitHub</a>
@@ -1450,12 +1477,15 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
+          <p><img src="img/mk1-min.png" width="100%"></p>
           <p>This was a project in a team of 4 to create an engine framework capable of running a Mario Kart style game, utilising DirectX12. The final engine and Mario Kart based game came together quite nicely over a few months of work.</p>
           <p>The main focus of this project was building the engine, so a significant focus was placed on producing reuseable systems rather than bespoke functionality for the Mario Kart project. We created a number of systems for physics, audio, asset management, and more - all of which are non-specific to the Mario Kart game and could allow the engine to be easily repurposed for another title.</p>
           <p>The core of the engine backend relies on a toolkit which allows access to most of the engine's core features through a GUI with a range of functionalities for asset importing (models/sounds/images/etc), configuration customisation (fonts/keybinds/cameras/glyphs), and a series of other things. We also embedded some more bespoke features into the engine toolkit, for example, item configurations.</p>
+          <p><img src="img/mk2-min.png" width="100%"></p>
           <p>Our asset pipeline was developed around a system I referred to as "asset comps": the idea of importing a series of assets which build up a compilation for a specific use. This "use" was then read-in by the engine itself to provide the assets for a certain entity. For example, a character would have a comp which specified its model, sounds, name, and more. When an asset is assigned to a comp it is tagged - asset tagging became useful to prevent the deletion of in-use assets, and also would be useful for releasing a project and making sure it does not ship with any development (or upcoming) assets.</p>
           <p>Levels are created for the engine through Blender, which utilises our own plugin that I developed for placing points in the world representing collision volumes (for lap checkpoints), item boxes, and more. This is a nice graphical way of adding entities within the map without using magic numbers. A level in the engine is built up by one or two models, one model supporting mesh collision, and the other being effectively background scenery. This was implemented later in development as we reached memory caps with larger levels as just one SDKMESH.</p>
           <p>The engine utilises the new SDKMESH2 format for PBR materials. All imported models have a bounding box automatically calculated, unless importing as a map, in which case mesh collision data is produced. Mesh collision data is stored in a proprietary file format which is a binary representation of each triangle in the model, which the engine's mesh collision system traverses to calculate collision responses. Another simple propriatary format is utilised for animated materials: these binary files work by storing a number of frames, and the timing intervals between them. The model renderer then applies this information at runtime when rendering each material.</p>
+          <p><img src="img/mk3-min.png" width="100%"></p>
           <p>To read a bit more about the engine, check out the repo below, or download the final game and give it a try!</p>
           <a href="https://mattfiler.itch.io/mario-kart-dx12" target="_blank" class="btn btn-secondary">Download</a>
           <a href="https://github.com/MattFiler/ThICC_Engine/" target="_blank" class="btn btn-secondary" >View Source on GitHub</a>
@@ -1493,6 +1523,7 @@
         <div class="modal-body">
           <p>Planned Obsolescence was a game created in a group of three with a tangential link to the film Ex Machina. You play as an AI named TIM - the Totally Intelligent Machine - who is in control of a research lab currently working on a project to develop a new AI that supersedes TIM. The aim of the game is to delay the project to replace you so that it is eventually cancelled and you can remain in control.</p>
           <p>The game features a full AI system and dynamic gameplay through a randomly selected map from the available map pool, there are also mappable keybinds and varying resolutions, as well as support for three languages.</p>
+          <p><img src="img/po-min.png" width="100%"></p>
           <p>As well as developing the game itself, I created a toolkit alongside the project which allowed us to produce maps and customise game elements through a friendly UI. The toolkit handled compiling game maps to improve performance of the game at runtime, as well as a few other handy features. As a result of the toolkit's map builder we saw a massive boost in performance, rendering just one map sprite instead of hundreds of individually placed tiles.</p>
           <p>I also produced the logo for the game and created the UI, which I'm quite pleased with - it's a nice simple style which reflects the tone of the game well.</p>
           <p>While the tool worked with XML, all data required by the game was compiled to JSON files at the map compile time, allowing for the <a href="https://github.com/nlohmann/json">nlohmann JSON library</a> to be used within the game for parsing config files.</p>
