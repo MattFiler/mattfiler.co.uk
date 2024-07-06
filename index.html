@@ -117,12 +117,11 @@
         </div>
 
         <div class="col-xl-6 project_reveal">
-          <button class="project_container" type="button" onclick="window.open('https://store.steampowered.com/app/2537360/Aurora/','_blank')">
+          <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#aurora_modal">
             <div class="aurora project_container_img">
               <div class="project_platform_info_container">
                 <div class="project_platform_info">
                   <span class="badge bg-primary project_release_year">2023</span>
-                  <span class="badge bg-success project_external_link" title="Opens in new tab"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                   <span class="badge bg-dark">Unity</span>
                   <span class="badge bg-dark">Windows/Android</span>
                   <span class="badge bg-dark">VR</span>
@@ -136,6 +135,29 @@
               </div>
             </div>
           </button>
+        </div>
+        <div class="modal fade" id="aurora_modal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Aurora</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class='embed-container youtube-player' data-id='7SEScSsG2Hg'></div><br>
+                <p>Aurora is a virtual reality demo built to demonstrate best practices for hands-first interaction in XR apps.</p>
+                <p>I worked on the project at Ultraleap (formerly Leap Motion) from initial conceptualisation to final release in a range of roles from programming to project management.</p>
+                <p>Our aim was to create a powerful resource for developers and a compelling application for consumers, combining learnings from Ultraleap's 10 years' experience in the hand tracking field into one seamless application, open sourcing and documenting every component we built in the process.</p>
+                <p>The end result is a powerful go-to piece for anyone interested in building or trying an XR experience using hands, and I'm super proud of what we achieved.</p>
+                <p><a href="https://store.steampowered.com/app/2537360/Aurora/" target="_blank" class="btn btn-secondary">Download on Steam</a>
+                <a href="https://store-global.picoxr.com/global/detail/1/7151720546852438022" target="_blank" class="btn btn-secondary">Download on Pico</a></p>
+                <p><a href="https://portal.lynx-r.com/store/apps/view/5/aurora" target="_blank" class="btn btn-secondary">Download on Lynx</a>
+                <a href="https://leap2.ultraleap.com/demos/aurora/" target="_blank" class="btn btn-secondary">Download on Quest</a></p>
+                <a href="https://www.artstation.com/artwork/yD1VeR" target="_blank" class="btn btn-secondary">View Screenshots on ArtStation</a>
+                <a href="https://docs.ultraleap.com/xr-guidelines/" target="_blank" class="btn btn-secondary">Design Guidelines</a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="col-xl-3 project_reveal">
@@ -777,8 +799,8 @@
         <p>Alien Isolation Zombies is a custom map for Black Ops 3 which I created in my spare time on and off between September 2016 and September 2018. The aim of the project was to teach myself all about material types, assembling a fun and engaging level, gameplay scripting, and lighting. As the project grew it ended up teaching me even more than that however, as publicity and interacting with the community became quite a big part of the map's success. I created a number of trailers for the map and publicised them around forums on the internet.</p>
         <p>The map has five main areas unlocked through the course of playing a linear narrative, helped along by cutscenes and voiceover work taken from the original game and repurposed. I edited cutscenes and audio to fit the story of the Zombies experience which added greatly to the atmosphere of the map and helped to convey the story I was going for. I wanted to keep the narrative close to that of the original game, but with Zombies instead of a Xenomorph.</p>
         <p>You're part of a team sent to Sevastopol Station aboard The Torrens following Weylan-Yutani recieving a distress signal from Colonial Marshal Waits. The message asks for immediate help to deal with the reanimation of the station's residents, however your primary objective from the Company is to investigate the status of the station and relay your findings to the Seegson response team. All other considerations secondary... crew expendable.</p>
-        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=817550789" target="_blank" class="btn btn-secondary">Download on Steam</a>
-        <a href="https://www.artstation.com/artwork/XAm2l" target="_blank" class="btn btn-secondary">View Screenshots on ArtStation</a>
+        <p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=817550789" target="_blank" class="btn btn-secondary">Download on Steam</a>
+        <a href="https://www.artstation.com/artwork/XAm2l" target="_blank" class="btn btn-secondary">View Screenshots on ArtStation</a></p>
         <a href="https://github.com/MattFiler/zm_alien_isolation/tree/master/usermaps/zm_alien_isolation/scripts/zm" target="_blank" class="btn btn-secondary">View Source on GitHub</a>
         <a href="/alienzombies/" class="btn btn-secondary">Read more...</a>
       </div>
