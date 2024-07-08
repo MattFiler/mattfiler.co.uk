@@ -110,7 +110,7 @@
                 <p>We built the Microgestures demo application alongside all of this work coming online, defining "what actually is a microgesture" in the process, and producing design guidelines and systems to enable the functionality for end users.</p>
                 <div class='embed-container youtube-player' data-id='kpzXk0ABDBY'></div><br>
                 <p>The end result is a solid glimpse into the potential of microgestures as an input method, and a fun demo which was taken to a number of trade shows and customer presentations.</p>
-                <a href="https://leap2.ultraleap.com/demos/microgestures-playground/" target="_blank" class="btn btn-secondary">Download</a>
+                <a href="https://store.steampowered.com/app/3097800" target="_blank" class="btn btn-secondary">Download on Steam</a>
               </div>
             </div>
           </div>
@@ -149,6 +149,7 @@
                 <p>I worked on the project at Ultraleap (formerly Leap Motion) from initial conceptualisation to final release in a range of roles from programming to project management.</p>
                 <p>Our aim was to create a powerful resource for developers and a compelling application for consumers, combining learnings from Ultraleap's 10 years' experience in the hand tracking field into one seamless application, open sourcing and documenting every component we built in the process.</p>
                 <p>The end result is a powerful go-to piece for anyone interested in building or trying an XR experience using hands, and I'm super proud of what we achieved.</p>
+                <p>We built the application with the intention of hitting as many platforms as possible - I developed a CI build system that would allow us to deploy to a whole range of Android and Windows targets. You can publicly download Aurora for Windows (via Steam), or Pico/Lynx via their respective stores. A download for Quest is also available via the Ultraleap website.</p>
                 <p><a href="https://store.steampowered.com/app/2537360/Aurora/" target="_blank" class="btn btn-secondary">Download on Steam</a>
                 <a href="https://store-global.picoxr.com/global/detail/1/7151720546852438022" target="_blank" class="btn btn-secondary">Download on Pico</a></p>
                 <p><a href="https://portal.lynx-r.com/store/apps/view/5/aurora" target="_blank" class="btn btn-secondary">Download on Lynx</a>
@@ -194,6 +195,7 @@
               <p>We came up with the idea of "Barista", an application based on the concept of a legacy Ultraleap demo where users were guided through creating a Starbucks coffee. Users would play through the demo using a real-world tracked cup, table, and tablet.</p>
               <p>I created the demo over a couple of weeks to showcase the marker tracking functionality at AWE USA, stripping back the legacy Starbucks demo for assets and rebuilding it entirely from scratch for the fiducial use case. We worked closely with the platform team to improve the quality of the marker tracking during the application's development, and built tooling improvements to better stabilise the fiducial frames in Unity.</p>
               <p>The end result is a solid look at how fiducial markers can be used in parallel with hand tracking to provide a unique training experience in XR.</p>
+              <a href="https://store.steampowered.com/app/3097810/Barista/" target="_blank" class="btn btn-secondary">Download on Steam</a>
             </div>
           </div>
         </div>
@@ -236,9 +238,9 @@
               <p>The project went through <b>many</b> iterations internally before we landed on its final revision - that being the results of hundreds of refinements from various rounds of user testing conducted by our experience design team.</p>
               <p>When it eventually launched alongside Gemini (V5 hand tracking) it was the showcase demo for all marketing material and was sent out to a series of influencers. Since then, the project has been taken to a wide range of trade shows including; GDC, AWE, CES, IAAPA (among others), where it has received high praise from companies such as Qualcomm and Pico.</p>
               <div class='embed-container youtube-player' data-id='upeqkvJpXFA'></div><br>
-              <a href="https://www.ultraleap.com/company/news/press-release/gemini-v5-hand-tracking/" target="_blank" class="btn btn-secondary">Press Release</a>
+              <p><a href="https://store.steampowered.com/app/3097820/Launcher/" target="_blank" class="btn btn-secondary">Download on Steam</a>
+              <a href="https://www.ultraleap.com/company/news/press-release/gemini-v5-hand-tracking/" target="_blank" class="btn btn-secondary">Press Release</a></p>
               <a href="https://www.youtube.com/watch?v=TFZ9kuc9gyM" target="_blank" class="btn btn-secondary">Laval Virtual Demo</a>
-              <a href="https://leap2.ultraleap.com/demos/xr-launcher/" target="_blank" class="btn btn-secondary">Download</a>
             </div>
           </div>
         </div>
@@ -266,12 +268,11 @@
       </div>
 
       <div class="col-xl-3 project_reveal">
-        <button class="project_container" type="button" onclick="window.open('https://leap2.ultraleap.com/demos/blocks/','_blank')">
+        <button class="project_container" type="button" data-bs-toggle="modal" data-bs-target="#blocks_modal">
           <div class="blocks project_container_img">
             <div class="project_platform_info_container">
               <div class="project_platform_info">
                 <span class="badge bg-primary project_release_year">2021</span>
-                <span class="badge bg-success project_external_link" title="Opens in new tab"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                 <span class="badge bg-dark">Unity</span>
                 <span class="badge bg-dark">Windows/Android</span>
                 <span class="badge bg-dark">VR</span>
@@ -285,6 +286,26 @@
             </div>
           </div>
         </button>
+    </div>
+    <div class="modal fade" id="blocks_modal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Blocks</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class='embed-container youtube-player' data-id='Llvh4GBpnVA'></div><br>
+            <p>Blocks is an immersive XR demo designed to introduce users to hand tracking in virtual reality. It allows users to spawn icospheres and cubes using simple finger gestures. Originally developed by Leap Motion in 2016, the demo served as a 'hello world' project to showcase the hands-first concept.</p>
+            <p>In 2021, I was tasked by Ultraleap with reviving the demo to demonstrate our new mobile headset support on the Qualcomm XR2 chipset. I leveraged the initial work by Leap Motion to create an entirely new Blocks experience from scratch.</p>
+            <p>To enhance performance on the mobile platform, I reworked various assets and scripts and implemented a CI build pipeline capable of deploying the demo to multiple platforms. The project was actively maintained over several years, adapting it for new Android platforms as they became compatible with our hand tracking technology.</p>
+            <p>The demo proved to be an excellent sales tool and served as Ultraleap's flagship product until the release of Aurora in 2023.</p>
+            <p><a href="https://store.steampowered.com/app/3097830/Blocks/" target="_blank" class="btn btn-secondary">Download on Steam</a>
+            <a href="https://www.ultraleap.com/company/news/press-release/gemini-v5-hand-tracking/" target="_blank" class="btn btn-secondary">Press Release</a></p>
+            <a href="https://www.youtube.com/watch?v=TFZ9kuc9gyM" target="_blank" class="btn btn-secondary">Laval Virtual Demo</a>
+          </div>
+        </div>
+      </div>
     </div>
     
   </div>
