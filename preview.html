@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slanted Images</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 1080px;
+            height: 413px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .image-wrapper {
+            position: relative;
+            width: calc(20% + 20px); /* Adjusted width to make sure images are equal and overlap */
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .image-wrapper:nth-child(1) {
+            clip-path: polygon(0 0, 100% 0, 91.5% 100%, 0 100%);
+            z-index: 5;
+        }
+
+        .image-wrapper:nth-child(2) {
+            clip-path: polygon(0 0, 100% 0, 91.5% 100%, 0 100%);
+            z-index: 4;
+            margin-left: -20px;
+        }
+
+        .image-wrapper:nth-child(3) {
+            clip-path: polygon(0 0, 100% 0, 91.5% 100%, 0 100%);
+            z-index: 3;
+            margin-left: -20px;
+        }
+
+        .image-wrapper:nth-child(4) {
+            clip-path: polygon(0 0, 100% 0, 91.5% 100%, 0 100%);
+            z-index: 2;
+            margin-left: -20px;
+        }
+
+        .image-wrapper:nth-child(5) {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            z-index: 1;
+            margin-left: -20px;
+        }
+
+        .image-wrapper img {
+            width: 125%;
+            height: 100%;
+            object-fit: cover;
+            transform: translateX(-10%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="img/barista.png" style="object-position: -375px;">
+            </div>
+            <div class="image-wrapper">
+                <img src="img/aliencs.jpg">
+            </div>
+            <div class="image-wrapper">
+                <img src="img/aurora.png" style="object-position: -182px;">
+            </div>
+            <div class="image-wrapper">
+                <img src="img/opencage_1.png" style="object-position: -266px;">
+            </div>
+            <div class="image-wrapper">
+                <img src="img/microgestures.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
