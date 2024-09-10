@@ -289,15 +289,18 @@ body {
 }
 
 .mariokart {
-	background-image: url("../img/mariokart.jpg");
+	/*background-image: url("../img/mariokart.jpg");*/
+	background-image: url("../img/anim/mariokart_anim.webp");
 }
 
 .alienzombies {
-	background-image: url("../img/alienzombies.jpg");
+	/*background-image: url("../img/alienzombies.jpg");*/
+	background-image: url("../img/anim/zombies_anim.webp");
 }
 
 .acmoverhaul {
-	background-image: url("../img/acmoverhaul.jpg");
+	/*background-image: url("../img/acmoverhaul.jpg");*/
+	background-image: url("../img/anim/acm_anim.webp");
 }
 
 .aliensisolationmod {
@@ -305,7 +308,8 @@ body {
 }
 
 .csalien {
-	background-image: url("../img/aliencs.jpg");
+	/*background-image: url("../img/aliencs.jpg");*/
+	background-image: url("../img/anim/aliencs_anim.webp");
 }
 
 .alienmodtools {
@@ -321,7 +325,8 @@ body {
 }
 
 .thomasalien {
-	background-image: url("../img/thomasalien.jpg");
+	/*background-image: url("../img/thomasalien.jpg");*/
+	background-image: url("../img/anim/thomas_anim.webp");
 }
 
 .sceneio {
@@ -333,7 +338,8 @@ body {
 }
 
 .ipatch {
-	background-image: url("../img/ipatch.jpg");
+	/*background-image: url("../img/ipatch.jpg");**/
+	background-image: url("../img/anim/pirates_anim.webp");
 }
 
 .rowbritannia {
@@ -341,7 +347,8 @@ body {
 }
 
 .ulxr {
-	background-image: url("../img/launcher.png");
+	/*background-image: url("../img/launcher.png");*/
+	background-image: url("../img/anim/launcher_anim.webp");
 }
 
 .blocks {
@@ -353,11 +360,13 @@ body {
 }
 
 .aurora {
-	background-image: url("../img/aurora.png");
+	/*background-image: url("../img/aurora.png");*/
+	background-image: url("../img/anim/aurora_anim.webp");
 }
 
 .microgestures {
-	background-image: url("../img/microgestures.jpg");
+	/*background-image: url("../img/microgestures.jpg");*/
+	background-image: url("../img/anim/microgestures_anim.webp");
 }
 
 .barista {
