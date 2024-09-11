@@ -100,6 +100,9 @@ body {
 		font-size: 60px;
 	}
 
+	.top_banner {
+		background: none;
+	}
 	.top_banner_me {
 		background: url('../img/splash_bg.jpg');
 		background-position: center center;
