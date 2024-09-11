@@ -4,7 +4,16 @@ body {
 }
 
 .top_banner {
+	background: linear-gradient(291deg, rgb(180, 223, 255) 0%, rgb(18 103 235) 100%);
+	background-image: url("../img/bg_new.svg");
 	background-size: cover;
+    background-position: top center;
+}
+.top_banner_me {
+	background: url('../img/me.png');
+	background-position: right bottom;
+    background-size: 610px;
+    background-repeat: no-repeat;
 }
 
 .new_btn {
@@ -19,7 +28,7 @@ body {
 
 .btn_white {
 	background: rgba(255, 255, 255, 0.9);
-	color: black;
+	color: #343a40;
 	border: 2px solid white;
 }
 
@@ -35,6 +44,12 @@ body {
 
 .btn_black:hover {
 	color: black;
+}
+
+@media only screen and (max-width: 1900px) {
+	.top_banner_me {
+		background-position: right -226px bottom;
+	}
 }
 
 @media only screen and (max-width: 482px) {
@@ -84,6 +99,13 @@ body {
 	.main_intro {
 		font-size: 60px;
 	}
+
+	.top_banner_me {
+		background: url('../img/splash_bg.jpg');
+		background-position: center center;
+		background-size:cover;
+		background-repeat: no-repeat;
+	}
 }
 
 @media only screen and (max-width: 1199px) {
@@ -95,6 +117,12 @@ body {
 		margin-left: 100px;
 		margin-right: 100px;
 		width: calc(100% - 200px) !important;
+	}
+}
+
+@media only screen and (max-width: 1002px) {
+	.hide_on_shrink {
+		display:none !important;
 	}
 }
 
