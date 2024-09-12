@@ -5,7 +5,7 @@ body {
 
 .top_banner {
 	background: linear-gradient(291deg, rgb(180, 223, 255) 0%, rgb(18 103 235) 100%);
-	background-image: url("../img/bg_new.svg");
+	background-image: url("../img/bg_new.svg"); /*https://app.haikei.app/*/
 	background-size: cover;
     background-position: top center;
 }
