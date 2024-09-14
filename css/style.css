@@ -121,6 +121,10 @@ body {
 	.mobile_links_toppad {
 		padding-top:10px;
 	}
+
+	.py-5-mobile-lesstop {
+		padding-top: 5px !important;
+	}
 }
 
 @media only screen and (max-width: 1199px) {
