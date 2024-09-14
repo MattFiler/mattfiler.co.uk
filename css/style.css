@@ -86,6 +86,12 @@ body {
 	}
 }
 
+@media only screen and (min-width: 992px) {
+	.supersmall_only {
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 991px) {
 	.desktop_only {
 		display: none;
@@ -101,13 +107,19 @@ body {
 	}
 
 	.top_banner {
-		background: none;
+		background-position: top right;
+		height:80vh;
 	}
 	.top_banner_me {
-		background: url('../img/splash_bg.jpg');
-		background-position: center center;
-		background-size:cover;
-		background-repeat: no-repeat;
+		height:100%;
+		background-size: 40vh;
+		background-position: bottom right -112px;
+	}
+	.top_banner_subtext_mobilevis {
+		display: unset !important;
+	}
+	.mobile_links_toppad {
+		padding-top:10px;
 	}
 }
 
