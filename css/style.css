@@ -424,6 +424,10 @@ body {
 	background-image: url("../img/similie.jpg");
 }
 
+.shortcampaign {
+	background-image: url("../img/anim/shortcampaign_anim.webp");
+}
+
 
 .navbar {
 	height: 70px;
