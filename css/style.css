@@ -428,6 +428,10 @@ body {
 	background-image: url("../img/anim/shortcampaign_anim.webp");
 }
 
+.thirdp {
+	background-image: url("../img/anim/thirdp_anim.webp");
+}
+
 
 .navbar {
 	height: 70px;
