@@ -11,7 +11,7 @@ body {
 }
 .top_banner_me {
 	background: url('../img/matt-crop-min.png');
-	background-position: right bottom;
+	background-position: right bottom -40px;
     background-size: 610px;
     background-repeat: no-repeat;
 }
@@ -48,7 +48,7 @@ body {
 
 @media only screen and (max-width: 1900px) {
 	.top_banner_me {
-		background-position: right -226px bottom;
+		background-position: right -226px bottom -40px;
 	}
 }
 
