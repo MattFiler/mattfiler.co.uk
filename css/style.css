@@ -46,7 +46,7 @@ body {
 	color: black;
 }
 
-@media only screen and (max-width: 1900px) {
+@media only screen and (max-width: 1350px) {
 	.top_banner_me {
 		background-position: right -226px bottom -40px;
 	}
@@ -108,7 +108,7 @@ body {
 
 	.top_banner {
 		background-position: top right;
-		height:85vh;
+		height:60vh;
 	}
 	.top_banner_me {
 		height:100%;
@@ -438,7 +438,7 @@ body {
 }
 
 .navbar-collapse {
-	background: #333;
+	background: #363636;
 }
 
 .nav-link {
@@ -449,8 +449,123 @@ body {
 	color: white;
 }
 
-@media only screen and (max-width: 829px) {
-	.navbar {
-		display: none;
+.tab-navigation {
+	background: #363636 !important;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none; 
+	-ms-overflow-style: none; 
+}
+
+.tab-navigation::-webkit-scrollbar {
+	display: none;
+}
+
+.tab-scroll-indicator {
+	position: fixed;
+	top: auto;
+	bottom: auto;
+	width: 40px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+	z-index: 1021;
+	color: white;
+	font-size: 18px;
+	transition: opacity 0.3s ease;
+}
+
+.tab-scroll-indicator.tab-scroll-left {
+	left: 0;
+	background: linear-gradient(to right, rgba(51, 51, 51, 0.9), transparent);
+}
+
+.tab-scroll-indicator.tab-scroll-right {
+	right: 0;
+	background: linear-gradient(to left, rgba(51, 51, 51, 0.9), transparent);
+}
+
+.tab-scroll-indicator.clickable {
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+.tab-scroll-indicator.clickable:hover {
+	opacity: 0.8;
+}
+
+.tab-navigation .nav-tabs {
+	border-bottom: none;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.tab-navigation .nav-link {
+	color: lightgrey;
+	border: none;
+	border-radius: 0;
+	padding: 15px 20px;
+	transition: all 0.3s ease;
+	white-space: nowrap;
+	flex-shrink: 0;
+	font-weight: bold;
+}
+
+.tab-navigation .nav-link:hover {
+	color: white;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tab-navigation .nav-link.active {
+	color: white;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-bottom: 3px solid white;
+}
+
+.tab-content {
+	min-height: 100vh;
+}
+
+.tab-pane {
+	display: none !important;
+	padding-top: 40px;
+}
+
+.tab-pane.show {
+	display: block !important;
+}
+
+.tab-pane.fade {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.tab-pane.fade.show {
+	opacity: 1;
+}
+
+.tab-pane.fade.show.active {
+	display: block !important;
+	opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+	.tab-navigation .nav-link {
+		padding: 10px 5px;
+		font-size: 14px;
+	}
+	
+	.tab-navigation .nav-item {
+		margin-right: 10px;
+	}
+	
+	.tab-navigation .nav-item:last-child {
+		margin-right: 0;
 	}
 }
