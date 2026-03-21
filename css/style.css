@@ -65,6 +65,11 @@ body {
 .company_text > h3 {
 	margin-left: -1px;
 }
+@media only screen and (max-width: 650px) {
+	.company_text {
+		margin-top:-1px;
+	}
+}
 
 .company_badge {
 	border-radius:20px; 
