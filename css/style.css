@@ -16,6 +16,16 @@ body {
     background-repeat: no-repeat;
 }
 
+.main_subintro > a {
+	color: white;
+	text-decoration: none;
+	transition: text-shadow 0.3s ease;
+}
+
+.main_subintro > a:hover {
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
 .new_btn {
 	font-size: 18px;
 	line-height: 0;
@@ -46,9 +56,46 @@ body {
 	color: black;
 }
 
+.company_text {
+	float:left; 
+	margin-left:20px; 
+	margin-top:-3px;
+	line-height: 5px;
+}
+.company_text > h3 {
+	margin-left: -1px;
+}
+
+.company_badge {
+	border-radius:20px; 
+	background-size:cover; 
+	float:left;
+}
+.feral_logo {
+	background-image:url(../img/feral.jpg); 
+}
+.ultraleap_logo {
+	background-image:url(../img/ultraleap.jpg); 
+}
+.playwest_logo {
+	background-image:url(../img/playwest.png); 
+}
+.uwe_logo {
+	background-image:url(../img/uwe.jpg); 
+}
+.pcsa_logo {
+	background-image:url(../img/pcsa.jpg); 
+}
+
 @media only screen and (max-width: 1350px) {
 	.top_banner_me {
 		background-position: right -226px bottom -40px;
+	}
+}
+
+@media only screen and (min-width: 1350px) {
+	.main_subintro {
+		margin-bottom: 26px;
 	}
 }
 
