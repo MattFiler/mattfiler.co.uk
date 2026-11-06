@@ -484,6 +484,10 @@ body {
 	background-image: url("../img/anim/thirdp_anim.webp");
 }
 
+.haloisolation {
+	background-image: url("../img/anim/haloisolation_anim.webp");
+}
+
 
 .navbar {
 	height: 70px;
