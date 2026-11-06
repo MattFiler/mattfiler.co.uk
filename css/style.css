@@ -283,6 +283,195 @@ body {
 	left: 20px;
 }
 
+.project_container.active {
+	box-shadow: 0px 0px 75px -10px rgba(0, 0, 0, 0.25);
+	transform: scale(1.01);
+}
+
+.project_details {
+	display: none !important;
+}
+
+/* Inline project details panel (js/project-panel.js) */
+.project_panel_wrap {
+	position: relative;
+	margin-top: -8px;
+	margin-bottom: 20px;
+	padding-top: 12px;
+}
+
+.project_panel_wrap.animating {
+	overflow: hidden;
+}
+
+.project_panel_arrow {
+	position: absolute;
+	top: 0;
+	width: 0;
+	height: 0;
+	margin-left: -14px;
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+	border-bottom: 13px solid #343a40;
+	transition: left 0.35s ease;
+}
+
+.project_panel {
+	position: relative;
+	border-radius: 25px;
+	background-color: #343a40;
+	color: rgba(255, 255, 255, 0.85);
+	padding: 35px;
+	box-shadow: 0px 0px 75px -10px rgba(0, 0, 0, 0.25);
+}
+
+.project_panel_close {
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 0;
+	background: rgba(255, 255, 255, 0.1);
+	color: white;
+	font-size: 18px;
+	line-height: 40px;
+	padding: 0;
+	z-index: 2;
+	transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.project_panel_close:hover,
+.project_panel_close:focus-visible {
+	background: rgba(255, 255, 255, 0.25);
+	transform: rotate(90deg);
+}
+
+.project_panel_media {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.project_panel_media.pinned {
+	position: sticky;
+	top: 100px;
+}
+
+/* While animating, the wrap clips its contents, which makes it the sticky
+   container and would push pinned media 100px down from the panel's top. */
+.project_panel_wrap.animating .project_panel_media.pinned {
+	position: static;
+}
+
+.project_panel_media .embed-container,
+.project_panel_img,
+.project_panel_art {
+	border-radius: 15px;
+	overflow: hidden;
+	background: #24282c;
+}
+
+.project_panel_img {
+	display: block;
+	width: 100%;
+}
+
+.project_panel_art {
+	padding-bottom: 56.25%;
+	background-size: cover;
+	background-position: center;
+}
+
+.project_panel_text {
+	padding-right: 50px;
+}
+
+.project_panel_text h2 {
+	color: white;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.project_panel_text p,
+.project_panel_text li {
+	line-height: 1.6;
+}
+
+.project_panel_text a:not(.btn) {
+	color: #9ec5fe;
+}
+
+.project_panel_text a:not(.btn):hover {
+	color: white;
+}
+
+.project_panel_text img {
+	border-radius: 15px;
+}
+
+.project_panel_text .embed-container {
+	border-radius: 15px;
+	background: #24282c;
+}
+
+.project_panel_text .btn-secondary {
+	background: white;
+	color: #343a40;
+	border: 2px solid white;
+	border-radius: 50px;
+	font-weight: bold;
+	padding: 8px 20px;
+	margin: 0 6px 8px 0;
+	transition: background 0.2s ease, color 0.2s ease;
+}
+
+.project_panel_text .btn-secondary:hover,
+.project_panel_text .btn-secondary:focus-visible {
+	background: transparent;
+	color: white;
+	border-color: white;
+}
+
+.embed-container > div {
+	cursor: pointer;
+}
+
+.embed-container img {
+	object-fit: cover;
+}
+
+@media only screen and (max-width: 991px) {
+	.project_panel {
+		padding: 25px;
+	}
+
+	.project_panel_media,
+	.project_panel_media.pinned {
+		position: static;
+		margin-top: 45px;
+	}
+
+	.project_panel_text {
+		padding-right: calc(var(--bs-gutter-x) * .5);
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.project_panel_wrap {
+		padding-left: calc(100px + var(--bs-gutter-x) * .5);
+		padding-right: calc(100px + var(--bs-gutter-x) * .5);
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.project_panel_wrap {
+		padding-left: calc(var(--bs-gutter-x) * .5);
+		padding-right: calc(var(--bs-gutter-x) * .5);
+	}
+}
+
 .section_header {
 	text-align: center;
 }
