@@ -302,14 +302,13 @@
                         </div>
                      </div>
                      <div class="col-xl-3 project_reveal">
-                        <button class="project_container" type="button" onclick="window.open('https://store.steampowered.com/app/2705560/Ultraleap_Hyperion/','_blank')">
+                        <button class="project_container" type="button" data-project="#controlpanel_modal" aria-expanded="false">
                            <div class="controlpanel project_container_img">
                               <div class="project_platform_info_container">
                                  <div class="project_platform_info">
                                     <div class="project_release_year">
                                       <span class="badge bg-primary">2022-24</span>
                                     </div>
-                                    <span class="badge bg-success project_external_link" title="Opens in new tab"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                                     <span class="badge bg-dark">Unity</span>
                                     <span class="badge bg-dark">Windows/Linux/Android</span>
                                  </div>
@@ -322,6 +321,22 @@
                               </div>
                            </div>
                         </button>
+                     </div>
+                     <div class="project_details" id="controlpanel_modal" hidden>
+                        <div class="modal-dialog">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <h5 class="modal-title">Control Panel</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                 <p>Control Panel is the app that end users of Ultraleap's hand tracking service use to see and manage their setup. I maintained it across both the Gemini and Hyperion releases of the tracking software.</p>
+                                 <p>As part of that work I rebuilt the whole app from scratch in Unity, replacing the old WinForms version and bringing it up to a modern spec.</p>
+                                 <p>It lets users preview live camera feeds across multiple tracking cameras, alongside the tracking data and the configuration for their setup.</p>
+                                 <a href="https://store.steampowered.com/app/2705560/Ultraleap_Hyperion/" target="_blank" class="btn btn-secondary">Download on Steam</a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                      <div class="col-xl-3 project_reveal">
                         <button class="project_container" type="button" data-project="#blocks_modal" aria-expanded="false">
@@ -518,12 +533,11 @@
                   </div>
                   <div class="row">
                      <div class="col-xl-3 project_reveal">
-                        <button class="project_container" type="button" onclick="window.open('https://github.com/MattFiler/SceneIO','_blank')">
+                        <button class="project_container" type="button" data-project="#sceneio_modal" aria-expanded="false">
                            <div class="sceneio project_container_img">
                               <div class="project_platform_info_container">
                                  <div class="project_platform_info">
                                     <span class="badge bg-primary project_release_year">2020</span>
-                                    <span class="badge bg-success project_external_link" title="Opens in new tab"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                                     <span class="badge bg-dark">DirectX</span>
                                     <span class="badge bg-dark">Windows</span>
                                  </div>
@@ -536,6 +550,22 @@
                               </div>
                            </div>
                         </button>
+                     </div>
+                     <div class="project_details" id="sceneio_modal" hidden>
+                        <div class="modal-dialog">
+                           <div class="modal-content">
+                              <div class="modal-header">
+                                 <h5 class="modal-title">Scene Converter</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                 <p>Scene Converter was a research tool I built for the University of the West of England.</p>
+                                 <p>It could load scenes from a variety of formats and convert them to any other scene type, carrying across both the mesh data and the materials.</p>
+                                 <p>Both sides were built to be extended: support for new input formats and new output scene types could each be added through custom plugins.</p>
+                                 <a href="https://github.com/MattFiler/SceneIO" target="_blank" class="btn btn-secondary">View on GitHub</a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                      <div class="col-xl-3 project_reveal">
                         <button class="project_container" type="button" data-project="#artstation2020_modal" aria-expanded="false">
@@ -702,17 +732,22 @@
                               <div class="modal-body">
                                  <div class='embed-container youtube-player' data-id='RiKhY-mqzCw'></div>
                                  <br>
-                                 <p>OpenCAGE is a suite of mod tools for Alien: Isolation.</p>
-                                 <p><img src="img/opencage_1.png" width="100%"></p>
-                                 <p>You can import, modify, and export models with their associated materials, textures, and shaders. You can modify the game's UI and tweak any configuration for characters, weapons, and more. You can dive deep into every behaviour tree in the game, and modify them via a graphical node interface. You can even script entire new levels, or modify scripts in existing ones using an editor that I built from scratch for the game's proprietary scripting formats.</p>
-                                 <p>The project has been years in development, and has expanded from simple file tweaks to the complex game-altering scripts that you can achieve today with ease. It's something I'm immensely proud of, and continues to be a passion project that I work on when my free time allows.</p>
+                                 <p>OpenCAGE is a suite of open-source mod tools for Alien: Isolation, now available as version 1.0 on Steam.</p>
+                                 <p><img src="img/anim/opencage_viewport-levels-loop.webp" width="100%" loading="lazy" alt="Flying through levels in OpenCAGE's 3D viewport, with the level's script below"></p>
+                                 <p>You can fly through any level in a 3D viewport, click anything you see to find it in the level's scripts, and move it around with a gizmo. The game's thousands of scripts open as flowgraphs in an editor I built from scratch for its proprietary scripting formats, so you can rewire existing logic or build your own.</p>
+                                 <p>With Live Link, OpenCAGE connects to the game while it runs. Props, lights and scripts update in-game without a reload, and you can debug scripts as they run, with each link lighting up as it fires and breakpoints to step through the logic.</p>
+                                 <p>Beyond scripting, you can import, export and preview models and animations, edit animation trees and scripted keyframes, change materials, shaders and textures, and edit the behaviour trees that drive the alien, androids and humans. Dedicated editors cover the game's configuration, from the alien's behaviour settings to inventory items, crafting recipes and localised text.</p>
+                                 <p><img src="img/anim/opencage_anim-preview-loop.webp" width="100%" loading="lazy" alt="The alien's part of a scripted scene playing in OpenCAGE's animation preview"></p>
+                                 <p>You can even create entire new levels from scratch, filling them with content from other levels or your own geometry, and have OpenCAGE generate their lighting, navmesh, collision, cover and sound. Launch Game drops you straight into any level, and its in-game debug menu shows view cones, AI alertness and the nav mesh, and includes a free cinematic camera for filming. Finished mods are packaged with Create a Mod, and players install them through the built-in Mod Manager.</p>
+                                 <p><img src="img/anim/opencage_debug-menu-loop.webp" width="100%" loading="lazy" alt="OpenCAGE's in-game debug menu showing character view cones, the nav mesh and the crosshair inspector"></p>
+                                 <p>The project has been years in development, and has grown from simple file tweaks into a full toolkit for making complex, game-altering mods. It's something I'm immensely proud of, and continues to be a passion project that I work on when my free time allows.</p>
                                  <p>I've been lucky enough to talk to a number of the game's original development team over the years, which has been an amazing learning experience. For context: Alien is built on a custom engine named Cathode, which was developed by the Creative Assembly exclusively for this game. Slowly picking it apart and understanding its design has been eye opening, and has really helped drive my passion for expanding the tools.</p>
-                                 <p><img src="img/opencage_4.png" width="100%"></p>
+                                 <p><img src="img/anim/opencage_ingame-alien.webp" width="100%" loading="lazy" alt="Playing as the alien in a brand new level created with OpenCAGE"></p>
                                  <p>As an extension of this project, I had the chance to work with the awesome Tommy Thompson from <a href="https://www.aiandgames.com/">AI and Games</a>. We collaborated on a video diving deep into the Xenomorph's AI - check it out <a href="https://www.youtube.com/watch?v=P7d5lF6U0eQ">here</a>! I was also later involved in his <a href="https://www.youtube.com/watch?v=LeIkEoHglQQ">retrospective of the game's development</a>, where I spoke at length about my work on OpenCAGE!</p>
-                                 <p>I'm also credited on a few other Alien projects, including the book <a href="https://unbound.com/books/perfect-organism/">Perfect Organism</a>, and a neat <a href="https://www.pcgamer.com/alien-isolations-lost-intro-sequence/">PC Gamer article</a> about the game's scrapped intro sequence, which I found while digging through the game's files. Thanks to Andy Kelly for his effort on those!</p>
+                                 <p>I'm also credited on a few other Alien projects, including the book <a href="https://unbound.com/books/perfect-organism/">Perfect Organism</a>, and a neat <a href="https://www.pcgamer.com/alien-isolations-lost-intro-sequence/">PC Gamer article</a> about the game's scrapped intro sequence, which I found while digging through the game's files. Thanks to Andy Kelly for his effort on those! OpenCAGE was recently covered again by <a href="https://www.pcgamer.com/games/horror/after-almost-a-decade-of-work-alien-isolation-mod-tools-hit-1-0-with-support-for-full-custom-maps-missions-modes-characters-weapons-animations-sounds-models-textures-and-more/" target="_blank">PC Gamer</a> as it reached the 1.0 release.</p>
                                  <p>OpenCAGE itself has also featured in a number of popular YouTube videos about the game's systems, notably one from <a href="https://www.youtube.com/watch?v=MNMAduVsqhQ">Slippy Slides</a> diving into the Xenomorph's off-screen behaviours.</p>
-                                 <p><img src="img/opencage_2.png" width="100%"></p>
                                  <p>I'm still tinkering away on the tools in my spare time, and sometimes use them to create my own mods which serve as great promotional material when I'm ready to release a big update. Find them also on this site!</p>
+                                 <a href="https://opencage.co.uk/" target="_blank" class="btn btn-secondary">Visit the Website</a>
                                  <a href="https://github.com/MattFiler/OpenCAGE" target="_blank" class="btn btn-secondary">Visit OpenCAGE on GitHub</a>
                                  <a href="https://store.steampowered.com/app/3367530/OpenCAGE/" target="_blank" class="btn btn-secondary">Download on Steam</a>
                               </div>
@@ -746,7 +781,7 @@
                               <div class="modal-body">
                                  <div class='embed-container youtube-player' data-id='wU3ef4KTTqY'></div>
                                  <br>
-                                 <p>Created to promote the release of custom maps within OpenCAGE.</p>
+                                 <p>Created to promote the release of custom map support within OpenCAGE.</p>
                                  <a href="https://www.moddb.com/games/alien-isolation/downloads/halo-isolation" target="_blank" class="btn btn-secondary">Download on ModDB</a>
                                  <a href="https://www.nexusmods.com/alienisolation/mods/195" target="_blank" class="btn btn-secondary">Download on Nexus</a>
                               </div>
@@ -819,6 +854,10 @@
                               <div class="modal-body">
                                  <div class='embed-container youtube-player' data-id='4Me0xJWkDf8'></div>
                                  <br>
+                                 <p>Created to showcase what's possible with OpenCAGE's scripting tools.</p>
+                                 <p>Alien: Isolation was originally played from a third person perspective during development, and some of the camera configurations from that era still exist in the game. This mod re-enables them, giving a preview of how the game played in third person.</p>
+                                 <p>To restore the full body, I reworked the first person player to use an NPC character model.</p>
+                                 <p>The mod isn't available to download, as it required a number of hacks to get working.</p>
                               </div>
                            </div>
                         </div>
